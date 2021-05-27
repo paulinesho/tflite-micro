@@ -3,7 +3,7 @@
 function update_from_upstream() {
   git checkout local-continuous-builds
   git fetch upstream
-  git merge upstream/master
+  git merge upstream/main
 }
 
 # Parameters:
@@ -55,7 +55,7 @@ function run_xtensa_build() {
   SIZE_LOG=${SCRIPT_DIR}/${TARGET_ARCH}_size_log
   echo "" >> ${SIZE_LOG}
   date >> ${SIZE_LOG}
-  echo "tensorflow version: "${HEAD_SHA} >> ${SIZE_LOG}
+  echo "tflite-micro version: "${HEAD_SHA} >> ${SIZE_LOG}
 
   xt-size tensorflow/lite/micro/tools/make/gen/xtensa_${TARGET_ARCH}_release/bin/keyword_benchmark &>> ${SIZE_LOG}
 
@@ -84,7 +84,7 @@ function run_xtensa_build() {
   LATENCY_LOG=${SCRIPT_DIR}/${TARGET_ARCH}_latency_log
   echo "" >> ${LATENCY_LOG}
   date >> ${LATENCY_LOG}
-  echo "tensorflow version: "${HEAD_SHA} >> ${LATENCY_LOG}
+  echo "tflite-micro version: "${HEAD_SHA} >> ${LATENCY_LOG}
   xt-run tensorflow/lite/micro/tools/make/gen/xtensa_${TARGET_ARCH}_default/bin/keyword_benchmark --xtensa-core=${XTENSA_CORE} &>> ${LATENCY_LOG}
 
   # Save a plot showing the evolution of the latency.
@@ -167,7 +167,7 @@ OVERALL_BUILD_STATUS_BADGE=${SCRIPT_DIR}/xtensa-build-status.svg
 update_from_upstream
 make -f tensorflow/lite/micro/tools/make/Makefile clean clean_downloads
 
-HEAD_SHA=`git rev-parse upstream/master`
+HEAD_SHA=`git rev-parse upstream/main`
 
 export XTENSA_TOOLS_VERSION=RI-2019.2-linux
 export XTENSA_BASE=~/xtensa/XtDevTools/install/
