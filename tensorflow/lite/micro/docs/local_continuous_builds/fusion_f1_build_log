@@ -13,29 +13,29 @@ tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping 
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/person_model_int8 already exists, skipping the download.
 URL transformed to HTTPS due to an HSTS policy
---2021-06-04 19:04:22--  https://github.com/foss-xtensa/nnlib-hifi4/raw/master/archive/xa_nnlib_hifi4_02_11_2021.zip
-Resolving github.com (github.com)... 140.82.113.3
-Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+--2021-06-05 06:04:20--  https://github.com/foss-xtensa/nnlib-hifi4/raw/master/archive/xa_nnlib_hifi4_02_11_2021.zip
+Resolving github.com (github.com)... 140.82.114.4
+Connecting to github.com (github.com)|140.82.114.4|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi4/master/archive/xa_nnlib_hifi4_02_11_2021.zip [following]
---2021-06-04 19:04:22--  https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi4/master/archive/xa_nnlib_hifi4_02_11_2021.zip
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+--2021-06-05 06:04:21--  https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi4/master/archive/xa_nnlib_hifi4_02_11_2021.zip
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.108.133, 185.199.109.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 410707 (401K) [application/zip]
 Saving to: '/tmp/xa_nnlib_hifi4.zip'
 
-     0K .......... .......... .......... .......... .......... 12% 22.4M 0s
-    50K .......... .......... .......... .......... .......... 24% 21.9M 0s
-   100K .......... .......... .......... .......... .......... 37% 37.8M 0s
-   150K .......... .......... .......... .......... .......... 49% 21.9M 0s
-   200K .......... .......... .......... .......... .......... 62% 31.9M 0s
-   250K .......... .......... .......... .......... .......... 74% 22.7M 0s
-   300K .......... .......... .......... .......... .......... 87% 91.6M 0s
-   350K .......... .......... .......... .......... .......... 99% 26.2M 0s
-   400K .                                                     100% 16.3M=0.01s
+     0K .......... .......... .......... .......... .......... 12% 20.8M 0s
+    50K .......... .......... .......... .......... .......... 24% 17.5M 0s
+   100K .......... .......... .......... .......... .......... 37% 51.0M 0s
+   150K .......... .......... .......... .......... .......... 49% 18.4M 0s
+   200K .......... .......... .......... .......... .......... 62% 31.2M 0s
+   250K .......... .......... .......... .......... .......... 74% 42.1M 0s
+   300K .......... .......... .......... .......... .......... 87% 19.2M 0s
+   350K .......... .......... .......... .......... .......... 99% 30.5M 0s
+   400K .                                                     100% 16.6M=0.02s
 
-2021-06-04 19:04:22 (27.8 MB/s) - '/tmp/xa_nnlib_hifi4.zip' saved [410707/410707]
+2021-06-05 06:04:21 (25.0 MB/s) - '/tmp/xa_nnlib_hifi4.zip' saved [410707/410707]
 
 ~/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4 ~/github/local-continuous-build/tflite-micro
 Initialized empty Git repository in /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/.git/
@@ -44,7 +44,7 @@ tensorflow/lite/micro/tools/make/download_and_extract.sh "http://mirror.tensorfl
 downloading http://mirror.tensorflow.org/github.com/mborgerding/kissfft/archive/v130.zip
 + [[ 0 -eq 0 ]]
 + break
-++ openssl dgst -md5 /tmp/tmp.WS3GDiWB92/temp_file
+++ openssl dgst -md5 /tmp/tmp.w0vY86Nsdx/temp_file
 ++ sed 's/.* //g'
 + DOWNLOADED_MD5=438ba1fef5783cc5f5f201395cc477ca
 + '[' 438ba1fef5783cc5f5f201395cc477ca '!=' 438ba1fef5783cc5f5f201395cc477ca ']'
@@ -55,13 +55,13 @@ downloading http://mirror.tensorflow.org/github.com/mborgerding/kissfft/archive/
 + [[ http://mirror.tensorflow.org/github.com/mborgerding/kissfft/archive/v130.zip == *tar.xz ]]
 + [[ http://mirror.tensorflow.org/github.com/mborgerding/kissfft/archive/v130.zip == *bz2 ]]
 + [[ http://mirror.tensorflow.org/github.com/mborgerding/kissfft/archive/v130.zip == *zip ]]
-+ unzip /tmp/tmp.WS3GDiWB92/temp_file -d /tmp/tmp.dmE1gxEzET
++ unzip /tmp/tmp.w0vY86Nsdx/temp_file -d /tmp/tmp.q5mMvrKgEt
 ++ wc -l
-++ find /tmp/tmp.dmE1gxEzET/kissfft-130 -maxdepth 0
+++ find /tmp/tmp.q5mMvrKgEt/kissfft-130 -maxdepth 0
 + '[' 1 = 1 ']'
-+ '[' -d /tmp/tmp.dmE1gxEzET/kissfft-130 ']'
-+ cp -R /tmp/tmp.dmE1gxEzET/kissfft-130/CHANGELOG /tmp/tmp.dmE1gxEzET/kissfft-130/COPYING /tmp/tmp.dmE1gxEzET/kissfft-130/Makefile /tmp/tmp.dmE1gxEzET/kissfft-130/README /tmp/tmp.dmE1gxEzET/kissfft-130/README.simd /tmp/tmp.dmE1gxEzET/kissfft-130/TIPS /tmp/tmp.dmE1gxEzET/kissfft-130/_kiss_fft_guts.h /tmp/tmp.dmE1gxEzET/kissfft-130/kiss_fft.c /tmp/tmp.dmE1gxEzET/kissfft-130/kiss_fft.h /tmp/tmp.dmE1gxEzET/kissfft-130/kissfft.hh /tmp/tmp.dmE1gxEzET/kissfft-130/test /tmp/tmp.dmE1gxEzET/kissfft-130/tools tensorflow/lite/micro/tools/make/downloads/kissfft/
-+ rm -rf /tmp/tmp.dmE1gxEzET /tmp/tmp.WS3GDiWB92
++ '[' -d /tmp/tmp.q5mMvrKgEt/kissfft-130 ']'
++ cp -R /tmp/tmp.q5mMvrKgEt/kissfft-130/CHANGELOG /tmp/tmp.q5mMvrKgEt/kissfft-130/COPYING /tmp/tmp.q5mMvrKgEt/kissfft-130/Makefile /tmp/tmp.q5mMvrKgEt/kissfft-130/README /tmp/tmp.q5mMvrKgEt/kissfft-130/README.simd /tmp/tmp.q5mMvrKgEt/kissfft-130/TIPS /tmp/tmp.q5mMvrKgEt/kissfft-130/_kiss_fft_guts.h /tmp/tmp.q5mMvrKgEt/kissfft-130/kiss_fft.c /tmp/tmp.q5mMvrKgEt/kissfft-130/kiss_fft.h /tmp/tmp.q5mMvrKgEt/kissfft-130/kissfft.hh /tmp/tmp.q5mMvrKgEt/kissfft-130/test /tmp/tmp.q5mMvrKgEt/kissfft-130/tools tensorflow/lite/micro/tools/make/downloads/kissfft/
++ rm -rf /tmp/tmp.q5mMvrKgEt /tmp/tmp.w0vY86Nsdx
 + find tensorflow/lite/micro/tools/make/downloads/kissfft -type f -name '*BUILD' -delete
 + [[ patch_kissfft == \p\a\t\c\h\_\a\m\_\s\d\k ]]
 + [[ patch_kissfft == \p\a\t\c\h\_\k\i\s\s\f\f\t ]]
