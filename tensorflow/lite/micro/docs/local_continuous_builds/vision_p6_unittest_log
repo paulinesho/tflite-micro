@@ -1,4 +1,4 @@
-Building at 68dd0cf4ff9b46f8ff7e0fb2a416714fb0ba0f2b
+Building at 16a9b1e8bfd69a73fcadff210aecf63085d9cbd4
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -344,8 +344,8 @@ xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwin
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -O3 -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/kissfft -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/bin/kernel_conv_test tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/obj/tensorflow/lite/micro/kernels/conv_test.o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/obj/tensorflow/lite/micro/kernels/conv_test_common.o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/lib/libtensorflow-microlite.a -Wl,--fatal-warnings -Wl,--gc-sections -lm
 tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/bin/kernel_conv_test '~~~ALL TESTS PASSED~~~' xtensa
 Testing FilterDimsNotMatchingAffineQuantization
-tensorflow/lite/micro/kernels/conv_common.cc:171 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
-tensorflow/lite/micro/kernels/conv_common.cc:171 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
+tensorflow/lite/micro/kernels/conv_common.cc:170 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
+tensorflow/lite/micro/kernels/conv_common.cc:170 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
 Testing Int8Input32x1Filter32x32ShouldMatchGolden
 2/2 tests passed
 ~~~ALL TESTS PASSED~~~
@@ -356,9 +356,9 @@ tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/
 Testing SimpleTestFloat
 Testing SimpleTestQuantizedPerChannel
 Testing InputOutputDifferentTypeIsError
-tensorflow/lite/micro/kernels/transpose_conv.cc:214 input->type != output->type (1 != 9)
+tensorflow/lite/micro/kernels/transpose_conv.cc:213 input->type != output->type (1 != 9)
 Testing HybridModeIsError
-tensorflow/lite/micro/kernels/transpose_conv.cc:164 affine_quantization was not true.
+tensorflow/lite/micro/kernels/transpose_conv.cc:163 affine_quantization was not true.
 4/4 tests passed
 ~~~ALL TESTS PASSED~~~
 
@@ -748,8 +748,8 @@ xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwin
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -O3 -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/kissfft -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/bin/kernel_depthwise_conv_test tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/obj/tensorflow/lite/micro/kernels/depthwise_conv_test.o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/lib/libtensorflow-microlite.a -Wl,--fatal-warnings -Wl,--gc-sections -lm
 tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/bin/kernel_depthwise_conv_test '~~~ALL TESTS PASSED~~~' xtensa
 Testing FilterDimsNotMatchingAffineQuantization
-tensorflow/lite/micro/kernels/depthwise_conv_common.cc:174 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kD was not true.
-tensorflow/lite/micro/kernels/depthwise_conv_common.cc:177 affine_quantization->scale->size != affine_quantization->zero_point->size (4 != 2)
+tensorflow/lite/micro/kernels/depthwise_conv_common.cc:173 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kD was not true.
+tensorflow/lite/micro/kernels/depthwise_conv_common.cc:176 affine_quantization->scale->size != affine_quantization->zero_point->size (4 != 2)
 Testing Int8Input32x4Filter32x4ShouldMatchGolden
 Testing Int8Input32x1Filter32x1ShouldMatchGolden
 3/3 tests passed
