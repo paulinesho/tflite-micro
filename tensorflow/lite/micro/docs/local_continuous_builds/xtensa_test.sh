@@ -29,6 +29,7 @@ function run_xtensa_build() {
   echo "Building at ${HEAD_SHA}" >> ${LOG}
 
   execute_command_and_log "make -f tensorflow/lite/micro/tools/make/Makefile clean" ${LOG}
+  execute_command_and_log "make -f tensorflow/lite/micro/tools/make/Makefile third_party_downloads" ${LOG}
 
   #######################################################################
   # build keyword benchmark with BUILD_TYPE=release and profile the size.
