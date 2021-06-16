@@ -1,4 +1,4 @@
-Building at 6b799b7dea57e2cb910932f434780a508bd8d897
+Building at 57c2576e787b6c05f59d9f7c1a0dc575398d2bd7
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -44,31 +44,31 @@ xt-clang -Wimplicit-function-declaration -std=c11 -Werror -fno-unwind-tables -ff
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DXTENSA -DNDEBUG -DTF_LITE_STRIP_ERROR_STRINGS -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Wno-unused-private-field -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/kernels/activations.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/activations.o
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DXTENSA -DNDEBUG -DTF_LITE_STRIP_ERROR_STRINGS -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Wno-unused-private-field -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/kernels/add.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/add.o
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DXTENSA -DNDEBUG -DTF_LITE_STRIP_ERROR_STRINGS -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Wno-unused-private-field -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/kernels/add_n.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/add_n.o
-In file included from tensorflow/lite/micro/kernels/activations.cc:18:
-./tensorflow/lite/kernels/internal/common.h:26:10: fatal error: 'fixedpoint/fixedpoint.h' file not found
-#include "fixedpoint/fixedpoint.h"
-         ^~~~~~~~~~~~~~~~~~~~~~~~~
 In file included from tensorflow/lite/micro/kernels/add.cc:16:
 ./tensorflow/lite/kernels/internal/reference/add.h:20:10: fatal error: 'fixedpoint/fixedpoint.h' file not found
 #include "fixedpoint/fixedpoint.h"
          ^~~~~~~~~~~~~~~~~~~~~~~~~
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DXTENSA -DNDEBUG -DTF_LITE_STRIP_ERROR_STRINGS -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Wno-unused-private-field -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/kernels/arg_min_max.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/arg_min_max.o
-1 error generated.
+In file included from tensorflow/lite/micro/kernels/activations.cc:18:
+./tensorflow/lite/kernels/internal/common.h:26:10: fatal error: 'fixedpoint/fixedpoint.h' file not found
+#include "fixedpoint/fixedpoint.h"
+         ^~~~~~~~~~~~~~~~~~~~~~~~~
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DXTENSA -DNDEBUG -DTF_LITE_STRIP_ERROR_STRINGS -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Wno-unused-private-field -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/kernels/batch_to_space_nd.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/batch_to_space_nd.o
-make: *** [tensorflow/lite/micro/tools/make/Makefile:650: tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/activations.o] Error 1
-make: *** Waiting for unfinished jobs....
 In file included from tensorflow/lite/micro/kernels/add_n.cc:16:
 In file included from ./tensorflow/lite/kernels/internal/reference/add_n.h:21:
 ./tensorflow/lite/kernels/internal/common.h:26:10: fatal error: 'fixedpoint/fixedpoint.h' file not found
 #include "fixedpoint/fixedpoint.h"
          ^~~~~~~~~~~~~~~~~~~~~~~~~
+1 error generated.
+make: *** [tensorflow/lite/micro/tools/make/Makefile:650: tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/activations.o] Error 1
+make: *** Waiting for unfinished jobs....
 In file included from tensorflow/lite/micro/kernels/batch_to_space_nd.cc:16:
 ./tensorflow/lite/kernels/internal/reference/batch_to_space_nd.h:20:10: fatal error: 'ruy/profiler/instrumentation.h' file not found
 #include "ruy/profiler/instrumentation.h"  // from @ruy
          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 1 error generated.
-make: *** [tensorflow/lite/micro/tools/make/Makefile:649: tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/add.o] Error 1
+make: *** [tensorflow/lite/micro/tools/make/Makefile:650: tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/add.o] Error 1
 1 error generated.
+make: *** [tensorflow/lite/micro/tools/make/Makefile:650: tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/add_n.o] Error 1
 1 error generated.
 make: *** [tensorflow/lite/micro/tools/make/Makefile:649: tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/batch_to_space_nd.o] Error 1
-make: *** [tensorflow/lite/micro/tools/make/Makefile:649: tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/kernels/add_n.o] Error 1
