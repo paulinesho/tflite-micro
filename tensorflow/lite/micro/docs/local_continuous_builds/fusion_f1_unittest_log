@@ -1,4 +1,4 @@
-Building at 718f895d9485d680d7eaddf8c754747b6786fa6a
+Building at 95ae9340e40fd79574e9090d5576af7e1625152a
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -559,11 +559,12 @@ tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/
 Testing SimpleTestFloat
 Testing SimpleTestQuantizedPerChannel
 Testing SimpleTestQuantized16x8PerChannel
+Testing SimpleTestQuantized16x8PerChannelWithInt16Bias
 Testing InputOutputDifferentTypeIsError
-tensorflow/lite/micro/kernels/transpose_conv.cc:222 input->type != output->type (1 != 9)
+tensorflow/lite/micro/kernels/transpose_conv.cc:239 input->type != output->type (1 != 9)
 Testing HybridModeIsError
-tensorflow/lite/micro/kernels/transpose_conv.cc:172 affine_quantization was not true.
-5/5 tests passed
+tensorflow/lite/micro/kernels/transpose_conv.cc:189 affine_quantization was not true.
+6/6 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=F1_190305_swupgrade -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DFUSION_F1 -mlongcalls -DNNLIB_V2 -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/ndsp/hifi4/include/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/memory_helpers_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_fusion_f1_default/obj/core/tensorflow/lite/micro/memory_helpers_test.o
@@ -803,7 +804,12 @@ Testing QuantizedAddVariousInputShapesInt8
 Testing QuantizedAddWithScalarBroadcastFloat
 Testing QuantizedAddWithScalarBroadcastInt8
 Testing QuantizedAddWithMixedBroadcastInt8
-10/10 tests passed
+Testing QuantizedAddNoActivationInt16
+Testing QuantizedAddActivationRelu1Int16
+Testing QuantizedAddVariousInputShapesInt16
+Testing QuantizedAddWithScalarBroadcastInt16
+Testing QuantizedAddWithMixedBroadcastInt16
+15/15 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=F1_190305_swupgrade -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DFUSION_F1 -mlongcalls -DNNLIB_V2 -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/ndsp/hifi4/include/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/kernels/add_n_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_fusion_f1_default/obj/core/tensorflow/lite/micro/kernels/add_n_test.o
