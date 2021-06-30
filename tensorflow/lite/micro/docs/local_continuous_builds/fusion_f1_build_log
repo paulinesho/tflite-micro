@@ -1,7 +1,8 @@
-Building at a4435d23a24eed61bcec735e1fae19c89edda7dd
+Building at e172d86a26a7ad0301de279f29a45b083ce20cbb
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
+find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/person_model_int8 already exists, skipping the download.
@@ -9,6 +10,7 @@ rm -rf tensorflow/lite/micro/tools/make/gen
 
 make -f tensorflow/lite/micro/tools/make/Makefile third_party_downloads
 
+find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/person_model_int8 already exists, skipping the download.
@@ -16,33 +18,34 @@ make: Nothing to be done for 'third_party_downloads'.
 
 make -f tensorflow/lite/micro/tools/make/Makefile TARGET=xtensa OPTIMIZED_KERNEL_DIR=xtensa TARGET_ARCH=fusion_f1 XTENSA_CORE=F1_190305_swupgrade keyword_benchmark BUILD_TYPE=release -j8
 
+find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/person_model_int8 already exists, skipping the download.
 URL transformed to HTTPS due to an HSTS policy
---2021-06-29 12:06:07--  https://github.com/foss-xtensa/nnlib-hifi4/raw/master/archive/xa_nnlib_hifi4_02_11_2021.zip
-Resolving github.com (github.com)... 140.82.114.3
-Connecting to github.com (github.com)|140.82.114.3|:443... connected.
+--2021-06-29 19:06:09--  https://github.com/foss-xtensa/nnlib-hifi4/raw/master/archive/xa_nnlib_hifi4_02_11_2021.zip
+Resolving github.com (github.com)... 192.30.255.112
+Connecting to github.com (github.com)|192.30.255.112|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi4/master/archive/xa_nnlib_hifi4_02_11_2021.zip [following]
---2021-06-29 12:06:07--  https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi4/master/archive/xa_nnlib_hifi4_02_11_2021.zip
+--2021-06-29 19:06:09--  https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi4/master/archive/xa_nnlib_hifi4_02_11_2021.zip
 Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.109.133, 185.199.110.133, ...
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 410707 (401K) [application/zip]
 Saving to: '/tmp/xa_nnlib_hifi4.zip'
 
-     0K .......... .......... .......... .......... .......... 12% 22.3M 0s
-    50K .......... .......... .......... .......... .......... 24% 18.6M 0s
-   100K .......... .......... .......... .......... .......... 37% 40.5M 0s
-   150K .......... .......... .......... .......... .......... 49% 31.5M 0s
-   200K .......... .......... .......... .......... .......... 62% 31.6M 0s
-   250K .......... .......... .......... .......... .......... 74% 51.8M 0s
-   300K .......... .......... .......... .......... .......... 87% 26.4M 0s
-   350K .......... .......... .......... .......... .......... 99% 60.8M 0s
-   400K .                                                     100% 25.7M=0.01s
+     0K .......... .......... .......... .......... .......... 12% 21.5M 0s
+    50K .......... .......... .......... .......... .......... 24% 20.0M 0s
+   100K .......... .......... .......... .......... .......... 37% 45.3M 0s
+   150K .......... .......... .......... .......... .......... 49% 24.7M 0s
+   200K .......... .......... .......... .......... .......... 62% 32.6M 0s
+   250K .......... .......... .......... .......... .......... 74% 44.9M 0s
+   300K .......... .......... .......... .......... .......... 87% 28.6M 0s
+   350K .......... .......... .......... .......... .......... 99% 71.4M 0s
+   400K .                                                     100% 39.5M=0.01s
 
-2021-06-29 12:06:07 (30.7 MB/s) - '/tmp/xa_nnlib_hifi4.zip' saved [410707/410707]
+2021-06-29 19:06:09 (30.7 MB/s) - '/tmp/xa_nnlib_hifi4.zip' saved [410707/410707]
 
 ~/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4 ~/github/local-continuous-build/tflite-micro
 Initialized empty Git repository in /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/.git/
@@ -358,6 +361,7 @@ xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwin
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
+find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/person_model_int8 already exists, skipping the download.
@@ -365,6 +369,7 @@ rm -rf tensorflow/lite/micro/tools/make/gen
 
 make -f tensorflow/lite/micro/tools/make/Makefile TARGET=xtensa OPTIMIZED_KERNEL_DIR=xtensa TARGET_ARCH=fusion_f1 XTENSA_CORE=F1_190305_swupgrade keyword_benchmark -j8
 
+find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/person_model_int8 already exists, skipping the download.

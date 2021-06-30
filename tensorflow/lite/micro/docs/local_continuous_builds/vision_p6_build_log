@@ -1,7 +1,8 @@
-Building at a4435d23a24eed61bcec735e1fae19c89edda7dd
+Building at e172d86a26a7ad0301de279f29a45b083ce20cbb
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
+find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/person_model_int8 already exists, skipping the download.
@@ -9,6 +10,7 @@ rm -rf tensorflow/lite/micro/tools/make/gen
 
 make -f tensorflow/lite/micro/tools/make/Makefile third_party_downloads
 
+find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/person_model_int8 already exists, skipping the download.
@@ -16,6 +18,7 @@ make: Nothing to be done for 'third_party_downloads'.
 
 make -f tensorflow/lite/micro/tools/make/Makefile TARGET=xtensa OPTIMIZED_KERNEL_DIR=xtensa TARGET_ARCH=vision_p6 XTENSA_CORE=P6_200528 keyword_benchmark BUILD_TYPE=release -j8
 
+find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/person_model_int8 already exists, skipping the download.
@@ -209,6 +212,7 @@ xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwin
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
+find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/person_model_int8 already exists, skipping the download.
@@ -216,6 +220,7 @@ rm -rf tensorflow/lite/micro/tools/make/gen
 
 make -f tensorflow/lite/micro/tools/make/Makefile TARGET=xtensa OPTIMIZED_KERNEL_DIR=xtensa TARGET_ARCH=vision_p6 XTENSA_CORE=P6_200528 keyword_benchmark -j8
 
+find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/person_model_int8 already exists, skipping the download.
