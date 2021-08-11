@@ -1,4 +1,4 @@
-Building at 8e86e1c29cec3fc115e481ab4cf946ab0e769d4d
+Building at b6cbaea68bf6fd8d778ab82817c3089288b57b34
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -457,16 +457,16 @@ xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwin
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=F1_190305_swupgrade -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI4 -mlongcalls -DNNLIB_V2 -Wno-shadow -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/ndsp/hifi4/include/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/bin/recording_micro_allocator_test tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/obj/core/tensorflow/lite/micro/recording_micro_allocator_test.o tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/obj/core/tensorflow/lite/micro/testing/test_conv_model.o tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/lib/libtensorflow-microlite.a -Wl,--fatal-warnings -Wl,--gc-sections -lm
 tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/bin/recording_micro_allocator_test '~~~ALL TESTS PASSED~~~' xtensa
 Testing TestRecordsTfLiteEvalTensorArrayData
-[RecordingMicroAllocator] Arena allocation total 8296 bytes
+[RecordingMicroAllocator] Arena allocation total 8324 bytes
 [RecordingMicroAllocator] Arena allocation head 7744 bytes
-[RecordingMicroAllocator] Arena allocation tail 552 bytes
+[RecordingMicroAllocator] Arena allocation tail 580 bytes
 [RecordingMicroAllocator] 'TfLiteEvalTensor data' used 180 bytes with alignment overhead (requested 180 bytes for 15 allocations)
-[RecordingMicroAllocator] 'NodeAndRegistration struct' used 196 bytes with alignment overhead (requested 196 bytes for 7 NodeAndRegistration structs)
-[RecordingMicroAllocator] Arena allocation total 8296 bytes
+[RecordingMicroAllocator] 'NodeAndRegistration struct' used 224 bytes with alignment overhead (requested 224 bytes for 7 NodeAndRegistration structs)
+[RecordingMicroAllocator] Arena allocation total 8324 bytes
 [RecordingMicroAllocator] Arena allocation head 7744 bytes
-[RecordingMicroAllocator] Arena allocation tail 552 bytes
+[RecordingMicroAllocator] Arena allocation tail 580 bytes
 [RecordingMicroAllocator] 'TfLiteEvalTensor data' used 180 bytes with alignment overhead (requested 180 bytes for 15 allocations)
-[RecordingMicroAllocator] 'NodeAndRegistration struct' used 196 bytes with alignment overhead (requested 196 bytes for 7 NodeAndRegistration structs)
+[RecordingMicroAllocator] 'NodeAndRegistration struct' used 224 bytes with alignment overhead (requested 224 bytes for 7 NodeAndRegistration structs)
 Testing TestRecordsNodeAndRegistrationArrayData
 Testing TestRecordsMultiTenantAllocations
 Testing TestRecordsPersistentTfLiteTensorData
