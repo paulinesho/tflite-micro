@@ -465,7 +465,6 @@ include $(MAKEFILE_DIR)/third_party_downloads.inc
 THIRD_PARTY_DOWNLOADS :=
 $(eval $(call add_third_party_download,$(GEMMLOWP_URL),$(GEMMLOWP_MD5),gemmlowp,))
 $(eval $(call add_third_party_download,$(RUY_URL),$(RUY_MD5),ruy,))
-$(eval $(call add_third_party_download,$(PERSON_MODEL_URL),$(PERSON_MODEL_MD5),person_model_grayscale,))
 RESULT := $(shell $(MAKEFILE_DIR)/person_detection_int8_download.sh ${MAKEFILE_DIR}/downloads $(CO_PROCESSOR))
 ifneq ($(RESULT), SUCCESS)
   $(error Something went wrong with the person detection int8 model download: $(RESULT))
@@ -666,7 +665,11 @@ else
 		$(OBJCOPY) $< $@ -O binary
 endif
 
+# Create kernel test targets.
 include tensorflow/lite/micro/kernels/Makefile.inc
+
+# Create binary size test target.
+include tensorflow/lite/micro/tools/ci_build/binary_size_test/Makefile.inc
 
 # Some tests have additional dependencies (beyond libtensorflow-microlite.a) and
 # those need to be explicitly specified with their own individual call to the
