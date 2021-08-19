@@ -1,12 +1,13 @@
 # Description:
 #   TensorFlow Lite for Microcontrollers Vision Example.
+load("//tensorflow/lite/micro:build_def.bzl","generate_cc_arrays")
+
 package(
     default_visibility = ["//visibility:public"],
+    # Disabling layering_check because of http://b/177257332
     features = ["-layering_check"],
     licenses = ["notice"],
 )
-
-load("//tensorflow/lite/micro:build_def.bzl","generate_cc_arrays")
 
 cc_library(
     name = "model_settings",
@@ -45,10 +46,10 @@ generate_cc_arrays(
 cc_library(
     name = "person_detect_model_data",
     srcs = [
-        "//tensorflow/lite/micro/models:generated_person_detect_model_cc",
+        "@person_detect_data//:person_detect_model_data",
     ],
     hdrs = [
-        "//tensorflow/lite/micro/models:generated_person_detect_model_hdr",
+        "person_detect_model_data.h",
     ],
     tags = [
         "no_oss",  # TODO(b/174680668): Exclude from OSS.
