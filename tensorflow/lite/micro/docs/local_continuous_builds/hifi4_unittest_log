@@ -1,4 +1,4 @@
-Building at a9f2e03b943990bc958ce3b92ca76ffc27fcf6d6
+Building at b703c9f934e5e8e5c3ba5f8f1b6660b3b9ac02da
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -410,7 +410,8 @@ Testing DetectionPostprocessFloatRegularNMS
 Testing DetectionPostprocessFloatFastNMSwithNoBackgroundClassAndKeypoints
 Testing DetectionPostprocessFloatRegularNMSwithNoBackgroundClassAndKeypoints
 Testing DetectionPostprocessFloatFastNMSWithBackgroundClassAndKeypoints
-5/5 tests passed
+Testing DetectionPostprocessFloatFNMSSwithNoBackgroundClassAndKeypointsStableSort
+6/6 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=F1_190305_swupgrade -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI4 -mlongcalls -DNNLIB_V2 -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/ndsp/hifi4/include/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/kernels/circular_buffer_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/obj/core/tensorflow/lite/micro/kernels/circular_buffer_test.o
