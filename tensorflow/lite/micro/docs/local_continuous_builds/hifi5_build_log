@@ -1,4 +1,4 @@
-Building at d41f2011f3da86e15cea83b5623800552dd52ed7
+Building at 52bd2f2c073d69ecba1e94cde53834d1293a8676
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -20,32 +20,32 @@ find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 URL transformed to HTTPS due to an HSTS policy
---2021-09-13 06:08:26--  https://github.com/foss-xtensa/nnlib-hifi5/raw/master/archive/xa_nnlib_hifi5_06_30.zip
-Resolving github.com (github.com)... 140.82.114.4
-Connecting to github.com (github.com)|140.82.114.4|:443... connected.
+--2021-09-13 12:09:09--  https://github.com/foss-xtensa/nnlib-hifi5/raw/master/archive/xa_nnlib_hifi5_06_30.zip
+Resolving github.com (github.com)... 192.30.255.112
+Connecting to github.com (github.com)|192.30.255.112|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi5/master/archive/xa_nnlib_hifi5_06_30.zip [following]
---2021-09-13 06:08:27--  https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi5/master/archive/xa_nnlib_hifi5_06_30.zip
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.108.133, 185.199.110.133, 185.199.109.133, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.108.133|:443... connected.
+--2021-09-13 12:09:09--  https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi5/master/archive/xa_nnlib_hifi5_06_30.zip
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 185.199.111.133, 185.199.110.133, 185.199.108.133, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|185.199.111.133|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 588979 (575K) [application/zip]
-Saving to: '/tmp/tmp.UQDaknplez/xa_nnlib_hifi5.zip'
+Saving to: '/tmp/tmp.O4PtVunWPF/xa_nnlib_hifi5.zip'
 
-     0K .......... .......... .......... .......... ..........  8% 24.7M 0s
-    50K .......... .......... .......... .......... .......... 17% 19.3M 0s
-   100K .......... .......... .......... .......... .......... 26% 96.8M 0s
-   150K .......... .......... .......... .......... .......... 34% 3.37M 0s
-   200K .......... .......... .......... .......... .......... 43% 44.9M 0s
-   250K .......... .......... .......... .......... .......... 52% 72.4M 0s
-   300K .......... .......... .......... .......... .......... 60% 74.7M 0s
-   350K .......... .......... .......... .......... .......... 69% 73.4M 0s
-   400K .......... .......... .......... .......... .......... 78% 93.1M 0s
-   450K .......... .......... .......... .......... .......... 86% 95.3M 0s
-   500K .......... .......... .......... .......... .......... 95%  103M 0s
-   550K .......... .......... .....                           100% 97.5M=0.02s
+     0K .......... .......... .......... .......... ..........  8% 21.3M 0s
+    50K .......... .......... .......... .......... .......... 17% 20.2M 0s
+   100K .......... .......... .......... .......... .......... 26%  119M 0s
+   150K .......... .......... .......... .......... .......... 34% 31.6M 0s
+   200K .......... .......... .......... .......... .......... 43% 77.4M 0s
+   250K .......... .......... .......... .......... .......... 52%  126M 0s
+   300K .......... .......... .......... .......... .......... 60%  121M 0s
+   350K .......... .......... .......... .......... .......... 69% 95.5M 0s
+   400K .......... .......... .......... .......... .......... 78% 65.6M 0s
+   450K .......... .......... .......... .......... .......... 86% 99.9M 0s
+   500K .......... .......... .......... .......... .......... 95% 11.5M 0s
+   550K .......... .......... .....                           100%  188M=0.01s
 
-2021-09-13 06:08:27 (23.1 MB/s) - '/tmp/tmp.UQDaknplez/xa_nnlib_hifi5.zip' saved [588979/588979]
+2021-09-13 12:09:10 (39.5 MB/s) - '/tmp/tmp.O4PtVunWPF/xa_nnlib_hifi5.zip' saved [588979/588979]
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DNDEBUG -DTF_LITE_STRIP_ERROR_STRINGS -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=AE_HiFi5_LE5_AO_FP_XC -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI5 -mlongcalls -Wno-unused-private-field -DNNLIB_HIFI5 -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/ndsp/hifi5/include/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi5_release/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/benchmarks/keyword_benchmark.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_release/obj/core/tensorflow/lite/micro/benchmarks/keyword_benchmark.o
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DNDEBUG -DTF_LITE_STRIP_ERROR_STRINGS -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=AE_HiFi5_LE5_AO_FP_XC -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI5 -mlongcalls -Wno-unused-private-field -DNNLIB_HIFI5 -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/ndsp/hifi5/include/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi5_release/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/benchmarks/keyword_scrambled_model_data.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_release/obj/core/tensorflow/lite/micro/benchmarks/keyword_scrambled_model_data.o
