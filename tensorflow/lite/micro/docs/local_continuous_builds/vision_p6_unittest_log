@@ -1,4 +1,4 @@
-Building at 0d3627d1d7f47774290f13400048101bd7698068
+Building at d1b84e61269716e1136eaf230fdc1901f63c4b80
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -1239,7 +1239,8 @@ Testing TestAllocateTfLiteTensorWithReset
 Testing TestOperatorInputsNotInSubgraphInputs
 Testing TestTypicalFirstOpAndSecondOpWithScratchTensors
 Testing TestModelWithUnusedTensors
-22/22 tests passed
+Testing TestMockModelAllocationByNonPersistentMemoryPlannerShim
+23/23 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/recording_micro_allocator_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/obj/core/tensorflow/lite/micro/recording_micro_allocator_test.o
@@ -1523,9 +1524,11 @@ xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwin
 tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/bin/non_persistent_buffer_planner_shim_test '~~~ALL TESTS PASSED~~~' xtensa
 Testing TestGetOffsetForBuffer
 Testing TestErrorGetOffsetForBuffer
-buffer index 2 is outside range 0 to 2
+Attempting to get offset for buffer 2, but only 2 buffers in given buffer plan.
+Testing TestAddBufferSuccess
+Testing TestAddBufferFailWhenExceedRange
+Attempting to add buffer 3, but only 2 buffers in given buffer plan.
 Testing TestBasics
-Unsupported operation
-3/3 tests passed
+5/5 tests passed
 ~~~ALL TESTS PASSED~~~
 
