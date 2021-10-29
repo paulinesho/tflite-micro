@@ -1,4 +1,4 @@
-Building at be7f88c81aba7b85b205f480b4da1bb0652ec964
+Building at 9452ef8381349fbf667891b28bacc404b026d220
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -1259,7 +1259,9 @@ Testing In3D_IdentityShrinkAxis7
 Testing RunTwice
 Testing In3D_IdentityShrinkAxis1int8
 Testing In3D_IdentityShrinkAxis1int16
-45/45 tests passed
+Testing In3D_IdentityShrinkAxis1int32
+Testing In3D_Strided2int32
+47/47 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=AE_HiFi5_LE5_AO_FP_XC -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI5 -mlongcalls -DNNLIB_HIFI5 -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/ndsp/hifi5/include/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/kernels/sub_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/obj/core/tensorflow/lite/micro/kernels/sub_test.o
