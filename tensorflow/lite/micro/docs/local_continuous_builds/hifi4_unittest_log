@@ -1,4 +1,4 @@
-Building at 21779d8e717c126f3e9128f109b1d967f63de415
+Building at 86c8d52502f41136acfb31d5998fae0a15561b03
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -696,7 +696,11 @@ Testing ExpandDimsNegativeAxisTest4
 Testing ExpandDimsNegativeAxisTest3
 Testing ExpandDimsNegativeAxisTest2
 Testing ExpandDimsNegativeAxisTest1
-7/7 tests passed
+Testing ExpandDimsInputOutputDimsMismatchShallFail
+tensorflow/lite/micro/kernels/expand_dims.cc:76 output_shape.Dims(i) == input_shape.Dims(i) was not true.
+Testing ExpandDimsAxisOutOfRangeShallFail
+tensorflow/lite/micro/kernels/expand_dims.cc:65 axis_value <= input_shape.DimensionsCount() was not true.
+9/9 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=F1_190305_swupgrade -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI4 -mlongcalls -DNNLIB_V2 -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/ndsp/hifi4/include/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/kernels/fill_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/obj/core/tensorflow/lite/micro/kernels/fill_test.o
