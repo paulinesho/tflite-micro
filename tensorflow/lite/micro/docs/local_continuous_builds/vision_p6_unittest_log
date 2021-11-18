@@ -1,4 +1,4 @@
-Building at ecf05497a9218711d64de42d7b5474424323fbfe
+Building at 6239d985c4d833b032aea92e5a94906e83fb055d
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -594,7 +594,7 @@ Testing FillInt8NoInputDimsData
 Testing FillFloatInt32Dims
 Testing FillScalar
 Testing FillInputDimsMismatchWithOutputShallFail
-tensorflow/lite/micro/kernels/fill.cc:33 array->data[i] != GetTensorData<T>(tensor)[i] (3 != 338752)
+tensorflow/lite/micro/kernels/fill.cc:33 array->data[i] != GetTensorData<T>(tensor)[i] (3 != 338944)
 7/7 tests passed
 ~~~ALL TESTS PASSED~~~
 
@@ -1343,7 +1343,8 @@ Testing TestInterpreterDoesNotAllocateUntilInvoke
 [RecordingMicroAllocator] 'TfLiteTensor variable buffer data' used 40 bytes with alignment overhead (requested 12 bytes for 3 allocations)
 [RecordingMicroAllocator] 'NodeAndRegistration struct' used 96 bytes with alignment overhead (requested 96 bytes for 3 NodeAndRegistration structs)
 Testing TestInterpreterMultipleInputs
-11/11 tests passed
+Testing TestInterpreterNullInputsAndOutputs
+12/12 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/micro_mutable_op_resolver_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/obj/core/tensorflow/lite/micro/micro_mutable_op_resolver_test.o
