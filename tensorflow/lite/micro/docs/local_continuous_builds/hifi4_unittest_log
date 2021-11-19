@@ -1,4 +1,4 @@
-Building at 6ec4fd8eff51d9788ab4c2e29706837d56564305
+Building at d9541da7c47ff3d7c20aea8934316e5ebabeace4
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -1524,7 +1524,8 @@ Testing FloatToAsymmetricQuantizedInt32Test
 Testing AsymmetricQuantizeInt8
 Testing AsymmetricQuantizeUInt8
 Testing SymmetricQuantizeInt32
-7/7 tests passed
+Testing Max
+8/8 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=F1_190305_swupgrade -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI4 -mlongcalls -DNNLIB_V2 -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/ndsp/hifi4/include/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/recording_simple_memory_allocator_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/obj/core/tensorflow/lite/micro/recording_simple_memory_allocator_test.o
