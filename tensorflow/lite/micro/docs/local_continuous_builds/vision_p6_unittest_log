@@ -1,4 +1,4 @@
-Building at a0f2c52a6a7c57646c08ce72d212ca46d40ad3b1
+Building at 1db0632b72b68972feb68aa12eb55899e666da8a
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -1264,8 +1264,9 @@ Testing TestAllocateTfLiteTensorWithReset
 Testing TestOperatorInputsNotInSubgraphInputs
 Testing TestTypicalFirstOpAndSecondOpWithScratchTensors
 Testing TestModelWithUnusedTensors
+Testing TestModelWithUnusedOperatorOutputs
 Testing TestMockModelAllocationByNonPersistentMemoryPlannerShim
-23/23 tests passed
+24/24 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/recording_micro_allocator_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/obj/core/tensorflow/lite/micro/recording_micro_allocator_test.o
