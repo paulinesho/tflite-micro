@@ -89,16 +89,16 @@ function run_xtensa_build() {
   xt-run tensorflow/lite/micro/tools/make/gen/xtensa_${TARGET_ARCH}_default/bin/keyword_benchmark --xtensa-core=${XTENSA_CORE} &>> ${LATENCY_LOG}
 
   # Save a plot showing the evolution of the latency.
-  python3 ${SCRIPT_DIR}/plot_latency.py ${LATENCY_LOG} --output_plot ${SCRIPT_DIR}/${TARGET_ARCH}_latency_history.png --hide
-  LATENCY_RESULT=$?
-  if [[ ${LATENCY_RESULT} != 0 ]]
-  then
-    /bin/cp ${SCRIPT_DIR}/TFLM-Xtensa-failed.svg ${KEYWORD_LATENCY_BADGE}
-    return ${LATENCY_RESULT}
-  fi
+  # python3 ${SCRIPT_DIR}/plot_latency.py ${LATENCY_LOG} --output_plot ${SCRIPT_DIR}/${TARGET_ARCH}_latency_history.png --hide
+  # LATENCY_RESULT=$?
+  # if [[ ${LATENCY_RESULT} != 0 ]]
+  # then
+  #   /bin/cp ${SCRIPT_DIR}/TFLM-Xtensa-failed.svg ${KEYWORD_LATENCY_BADGE}
+  #   return ${LATENCY_RESULT}
+  # fi
 
-  # No regression in the latency.
-  /bin/cp ${SCRIPT_DIR}/TFLM-Xtensa-passing.svg ${KEYWORD_LATENCY_BADGE}
+  # # No regression in the latency.
+  # /bin/cp ${SCRIPT_DIR}/TFLM-Xtensa-passing.svg ${KEYWORD_LATENCY_BADGE}
 }
 
 # Parameters:

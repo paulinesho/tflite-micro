@@ -33,11 +33,11 @@ gh-md-toc --insert --no-backup xtensa.md
 
 * Table with more granular results
 
-| Architecture |  Keyword (build) | Keyword (metrics) | Unit tests |
-| ---------- |       -------      |     ------        |  --------  |
-| Hifi4 / Fusion F1  | [![Status](xtensa-hifi4-keyword-build-status.svg)](hifi4_build_log) | [![Status](xtensa-hifi4-keyword-latency-status.svg)](hifi4_latency_log) | [![Status](xtensa-hifi4-unittests-status.svg)](hifi4_unittest_log) |
-| Hifi5  | [![Status](xtensa-hifi5-keyword-build-status.svg)](hifi5_build_log) | [![Status](xtensa-hifi5-keyword-latency-status.svg)](hifi5_latency_log) | [![Status](xtensa-hifi5-unittests-status.svg)](hifi5_unittest_log) |
-| Vision P6  | [![Status](xtensa-vision_p6-keyword-build-status.svg)](vision_p6_build_log) | [![Status](xtensa-vision_p6-keyword-latency-status.svg)](vision_p6_latency_log) | [![Status](xtensa-vision_p6-unittests-status.svg)](vision_p6_unittest_log) |
+| Architecture |  Keyword (build) | Unit tests |
+| ---------- |       -------      | --------  |
+| Hifi4 / Fusion F1  | [![Status](xtensa-hifi4-keyword-build-status.svg)](hifi4_build_log) | [![Status](xtensa-hifi4-unittests-status.svg)](hifi4_unittest_log) |
+| Hifi5  | [![Status](xtensa-hifi5-keyword-build-status.svg)](hifi5_build_log) | [![Status](xtensa-hifi5-unittests-status.svg)](hifi5_unittest_log) |
+| Vision P6  | [![Status](xtensa-vision_p6-keyword-build-status.svg)](vision_p6_build_log) | [![Status](xtensa-vision_p6-unittests-status.svg)](vision_p6_unittest_log) |
 
 
 # Detailed Results
