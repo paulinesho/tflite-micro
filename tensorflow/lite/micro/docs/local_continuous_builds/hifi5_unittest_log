@@ -1,4 +1,4 @@
-Building at d3533949d56fc48a6416ae528fc3eabb067d46f4
+Building at 5991460053b1f4822562b5e41d5c0312477dab51
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -480,9 +480,9 @@ Testing SimpleTestQuantizedPerChannel
 Testing SimpleTestQuantized16x8PerChannel
 Testing SimpleTestQuantized16x8PerChannelWithInt16Bias
 Testing InputOutputDifferentTypeIsError
-tensorflow/lite/micro/kernels/transpose_conv.cc:239 input->type != output->type (1 != 9)
+tensorflow/lite/micro/kernels/transpose_conv.cc:233 input->type != output->type (1 != 9)
 Testing HybridModeIsError
-tensorflow/lite/micro/kernels/transpose_conv.cc:189 affine_quantization was not true.
+tensorflow/lite/micro/kernels/transpose_conv.cc:191 affine_quantization was not true.
 6/6 tests passed
 ~~~ALL TESTS PASSED~~~
 
