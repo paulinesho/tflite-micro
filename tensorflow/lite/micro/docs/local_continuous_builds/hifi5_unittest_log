@@ -1,4 +1,4 @@
-Building at e2465c5390e288f1b22d71cb6ab2b02769c7c0e0
+Building at ff5c3a610481989d04dc26f4c5a5b0bfe9bfff0b
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -1425,14 +1425,14 @@ xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwin
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=AE_HiFi5_LE5_AO_FP_XC -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI5 -mlongcalls -DNNLIB_HIFI5 -Wno-shadow -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/ndsp/hifi5/include/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/bin/recording_micro_allocator_test tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/obj/core/tensorflow/lite/micro/recording_micro_allocator_test.o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/obj/core/tensorflow/lite/micro/testing/test_conv_model.o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/lib/libtensorflow-microlite.a -Wl,--fatal-warnings -Wl,--gc-sections -lm
 tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/bin/recording_micro_allocator_test '~~~ALL TESTS PASSED~~~' xtensa
 Testing TestRecordsTfLiteEvalTensorArrayData
-[RecordingMicroAllocator] Arena allocation total 8372 bytes
+[RecordingMicroAllocator] Arena allocation total 8380 bytes
 [RecordingMicroAllocator] Arena allocation head 7744 bytes
-[RecordingMicroAllocator] Arena allocation tail 628 bytes
+[RecordingMicroAllocator] Arena allocation tail 636 bytes
 [RecordingMicroAllocator] 'TfLiteEvalTensor data' used 180 bytes with alignment overhead (requested 180 bytes for 15 allocations)
 [RecordingMicroAllocator] 'NodeAndRegistration struct' used 224 bytes with alignment overhead (requested 224 bytes for 7 NodeAndRegistration structs)
-[RecordingMicroAllocator] Arena allocation total 8372 bytes
+[RecordingMicroAllocator] Arena allocation total 8380 bytes
 [RecordingMicroAllocator] Arena allocation head 7744 bytes
-[RecordingMicroAllocator] Arena allocation tail 628 bytes
+[RecordingMicroAllocator] Arena allocation tail 636 bytes
 [RecordingMicroAllocator] 'TfLiteEvalTensor data' used 180 bytes with alignment overhead (requested 180 bytes for 15 allocations)
 [RecordingMicroAllocator] 'NodeAndRegistration struct' used 224 bytes with alignment overhead (requested 224 bytes for 7 NodeAndRegistration structs)
 Testing TestRecordsNodeAndRegistrationArrayData
@@ -1503,13 +1503,13 @@ Failed to allocate memory for context->eval_tensors, 120 bytes required
 Failed starting model allocation.
 
 Testing TestInterpreterDoesNotAllocateUntilInvoke
-[RecordingMicroAllocator] Arena allocation total 616 bytes
+[RecordingMicroAllocator] Arena allocation total 632 bytes
 [RecordingMicroAllocator] Arena allocation head 32 bytes
-[RecordingMicroAllocator] Arena allocation tail 584 bytes
+[RecordingMicroAllocator] Arena allocation tail 600 bytes
 [RecordingMicroAllocator] 'TfLiteEvalTensor data' used 120 bytes with alignment overhead (requested 120 bytes for 10 allocations)
 [RecordingMicroAllocator] 'Persistent TfLiteTensor data' used 80 bytes with alignment overhead (requested 80 bytes for 2 tensors)
 [RecordingMicroAllocator] 'Persistent buffer data' used 24 bytes with alignment overhead (requested 8 bytes for 2 allocations)
-[RecordingMicroAllocator] 'TfLiteTensor variable buffer data' used 40 bytes with alignment overhead (requested 12 bytes for 3 allocations)
+[RecordingMicroAllocator] 'TfLiteTensor variable buffer data' used 48 bytes with alignment overhead (requested 12 bytes for 3 allocations)
 [RecordingMicroAllocator] 'NodeAndRegistration struct' used 96 bytes with alignment overhead (requested 96 bytes for 3 NodeAndRegistration structs)
 Testing TestInterpreterMultipleInputs
 Testing TestInterpreterNullInputsAndOutputs
@@ -1609,7 +1609,11 @@ Testing TestTempAllocations
 Testing TestResetTempAllocations
 Testing TestEnsureHeadSizeWithoutResettingTemp
 Internal error: SetHeadBufferSize() needs to be called after ResetTempAllocations().
-13/13 tests passed
+Testing TestIsAllTempDeallocated
+Number of allocated temp buffers: 1. Checksum passing status: 0
+Number of allocated temp buffers: 2. Checksum passing status: 0
+Number of allocated temp buffers: 1. Checksum passing status: 0
+14/14 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=AE_HiFi5_LE5_AO_FP_XC -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI5 -mlongcalls -DNNLIB_HIFI5 -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/ndsp/hifi5/include/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/testing_helpers_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/obj/core/tensorflow/lite/micro/testing_helpers_test.o
