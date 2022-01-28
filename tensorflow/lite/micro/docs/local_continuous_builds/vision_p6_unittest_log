@@ -1,4 +1,4 @@
-Building at db6765abb20f9bd03db49773337c66b0db9f950b
+Building at b6fd2cd8409e97c4e3797def8b266b1e9335ac28
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -585,7 +585,7 @@ Testing FillInt8NoInputDimsData
 Testing FillFloatInt32Dims
 Testing FillScalar
 Testing FillInputDimsMismatchWithOutputShallFail
-tensorflow/lite/micro/kernels/fill.cc:33 array->data[i] != GetTensorData<T>(tensor)[i] (3 != 341888)
+tensorflow/lite/micro/kernels/fill.cc:33 array->data[i] != GetTensorData<T>(tensor)[i] (3 != 346944)
 7/7 tests passed
 ~~~ALL TESTS PASSED~~~
 
@@ -1270,13 +1270,15 @@ Testing OfflinePlannerOfflineOnline
 Testing TestAllocatePersistentTfLiteTensor
 Testing TestAllocateSingleTempTfLiteTensor
 Testing TestAllocateChainOfTfLiteTensor
+Testing TestAllocateAndDeallocateChainOfTfLiteTensor
+Number of allocated temp buffers: 1. Checksum passing status: 0
 Testing TestAllocateTfLiteTensorWithReset
 Testing TestOperatorInputsNotInSubgraphInputs
 Testing TestTypicalFirstOpAndSecondOpWithScratchTensors
 Testing TestModelWithUnusedTensors
 Testing TestModelWithUnusedOperatorOutputs
 Testing TestMockModelAllocationByNonPersistentMemoryPlannerShim
-24/24 tests passed
+25/25 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/recording_micro_allocator_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/obj/core/tensorflow/lite/micro/recording_micro_allocator_test.o
@@ -1334,10 +1336,12 @@ tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/
 Testing TestSetGetExternalContextSuccess
 Testing TestGetExternalContextWithoutSetShouldReturnNull
 Testing TestSetExternalContextCanOnlyBeCalledOnce
-Attempting to set external context to 0x7ffec8 but it was 0x7ffec8 already
+Attempting to set external context to 0x7ffeb8 but it was 0x7ffeb8 already
 Testing TestSetExternalContextToNullShouldFail
 Attempting to set external context to 0x0 but it was 0x0 already
-4/4 tests passed
+Testing TestGetTempInputTensor
+Testing TestGetTempOutputTensor
+6/6 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/micro_error_reporter_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/obj/core/tensorflow/lite/micro/micro_error_reporter_test.o
