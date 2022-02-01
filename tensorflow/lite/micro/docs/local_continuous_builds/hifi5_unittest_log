@@ -1,4 +1,4 @@
-Building at 6698e1affbff5a68f37bca3744fc4aca3d76fa87
+Building at ce9451f542728132b6ed1734c4c4d29e71e108cd
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -468,8 +468,8 @@ xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwin
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=AE_HiFi5_LE5_AO_FP_XC -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI5 -mlongcalls -DNNLIB_HIFI5 -Wno-shadow -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/ndsp/hifi5/include/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/bin/kernel_conv_test tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/obj/core/tensorflow/lite/micro/kernels/conv_test.o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/obj/core/tensorflow/lite/micro/kernels/conv_test_common.o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/obj/core/tensorflow/lite/micro/kernels/testdata/conv_test_data.o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/lib/libtensorflow-microlite.a -Wl,--fatal-warnings -Wl,--gc-sections -lm
 tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/bin/kernel_conv_test '~~~ALL TESTS PASSED~~~' xtensa
 Testing FilterDimsNotMatchingAffineQuantization
-tensorflow/lite/micro/kernels/conv_common.cc:170 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
-tensorflow/lite/micro/kernels/conv_common.cc:170 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
+tensorflow/lite/micro/kernels/conv_common.cc:184 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
+tensorflow/lite/micro/kernels/conv_common.cc:184 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
 Testing Int8Input32x1Filter32x32ShouldMatchGolden
 Testing Int8Filter8x3x3x3PerChannelScaleRelu6ShouldMatchGolden
 3/3 tests passed
@@ -483,9 +483,9 @@ Testing SimpleTestQuantizedPerChannel
 Testing SimpleTestQuantized16x8PerChannel
 Testing SimpleTestQuantized16x8PerChannelWithInt16Bias
 Testing InputOutputDifferentTypeIsError
-tensorflow/lite/micro/kernels/xtensa/transpose_conv.cc:234 input->type != output->type (1 != 9)
+tensorflow/lite/micro/kernels/xtensa/transpose_conv.cc:251 input->type != output->type (1 != 9)
 Testing HybridModeIsError
-tensorflow/lite/micro/kernels/xtensa/transpose_conv.cc:192 affine_quantization was not true.
+tensorflow/lite/micro/kernels/xtensa/transpose_conv.cc:205 affine_quantization was not true.
 6/6 tests passed
 ~~~ALL TESTS PASSED~~~
 
@@ -656,8 +656,8 @@ xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwin
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=AE_HiFi5_LE5_AO_FP_XC -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI5 -mlongcalls -DNNLIB_HIFI5 -Wno-shadow -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/ndsp/hifi5/include/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/bin/kernel_depthwise_conv_test tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/obj/core/tensorflow/lite/micro/kernels/depthwise_conv_test.o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/lib/libtensorflow-microlite.a -Wl,--fatal-warnings -Wl,--gc-sections -lm
 tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/bin/kernel_depthwise_conv_test '~~~ALL TESTS PASSED~~~' xtensa
 Testing FilterDimsNotMatchingAffineQuantization
-tensorflow/lite/micro/kernels/depthwise_conv_common.cc:173 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kD was not true.
-tensorflow/lite/micro/kernels/depthwise_conv_common.cc:176 affine_quantization->scale->size != affine_quantization->zero_point->size (4 != 2)
+tensorflow/lite/micro/kernels/depthwise_conv_common.cc:185 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kD was not true.
+tensorflow/lite/micro/kernels/depthwise_conv_common.cc:188 affine_quantization->scale->size != affine_quantization->zero_point->size (4 != 2)
 Testing Int8Input32x4Filter32x4ShouldMatchGolden
 Testing Int8Input32x1Filter32x1ShouldMatchGolden
 3/3 tests passed
@@ -727,7 +727,7 @@ Testing FillInt8NoInputDimsData
 Testing FillFloatInt32Dims
 Testing FillScalar
 Testing FillInputDimsMismatchWithOutputShallFail
-tensorflow/lite/micro/kernels/fill.cc:33 array->data[i] != GetTensorData<T>(tensor)[i] (3 != 2013265200)
+tensorflow/lite/micro/kernels/fill.cc:33 array->data[i] != GetTensorData<T>(tensor)[i] (3 != 2013265424)
 7/7 tests passed
 ~~~ALL TESTS PASSED~~~
 
@@ -962,11 +962,11 @@ Testing Test2DInt8V2
 Testing Test2DInt16V2
 Testing Test2DInt32V2
 Testing Test2DInt8V2ExpectFailurePadValueQuantizationMismatch
-tensorflow/lite/micro/kernels/pad.cc:120 static_cast<double>(output->params.scale) != static_cast<double>(constant_values->params.scale) (0 != 1072693248)
+tensorflow/lite/micro/kernels/pad.cc:127 static_cast<double>(output->params.scale) != static_cast<double>(constant_values->params.scale) (0 != 1072693248)
 Testing Test2DInt8V2ExpectFailurePadValueQuantizationMismatch
-tensorflow/lite/micro/kernels/pad.cc:120 static_cast<double>(output->params.scale) != static_cast<double>(constant_values->params.scale) (0 != 1072693248)
+tensorflow/lite/micro/kernels/pad.cc:127 static_cast<double>(output->params.scale) != static_cast<double>(constant_values->params.scale) (0 != 1072693248)
 Testing Test2DInt8ExpectFailureQuantizationRangeExcludesZero
-tensorflow/lite/micro/kernels/pad.cc:113 output->params.zero_point <= std::numeric_limits<int8_t>::max() was not true.
+tensorflow/lite/micro/kernels/pad.cc:120 output->params.zero_point <= std::numeric_limits<int8_t>::max() was not true.
 12/12 tests passed
 ~~~ALL TESTS PASSED~~~
 
@@ -1057,25 +1057,25 @@ xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwin
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=AE_HiFi5_LE5_AO_FP_XC -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI5 -mlongcalls -DNNLIB_HIFI5 -Wno-shadow -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/algo/ndsp/hifi5/include/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/bin/kernel_reshape_test tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/obj/core/tensorflow/lite/micro/kernels/reshape_test.o tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/lib/libtensorflow-microlite.a -Wl,--fatal-warnings -Wl,--gc-sections -lm
 tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_default/bin/kernel_reshape_test '~~~ALL TESTS PASSED~~~' xtensa
 Testing ReshapeWithMismatchedDimensionsShouldFail
-tensorflow/lite/micro/kernels/reshape.cc:70 num_input_elements != num_output_elements (8 != 2)
-tensorflow/lite/micro/kernels/reshape.cc:70 num_input_elements != num_output_elements (8 != 2)
-tensorflow/lite/micro/kernels/reshape.cc:77 ReshapeOutput(context, node) != kTfLiteOk (1 != 0)
+tensorflow/lite/micro/kernels/reshape.cc:74 num_input_elements != num_output_elements (8 != 2)
+tensorflow/lite/micro/kernels/reshape.cc:74 num_input_elements != num_output_elements (8 != 2)
+tensorflow/lite/micro/kernels/reshape.cc:84 ReshapeOutput(context, node) != kTfLiteOk (1 != 0)
 Testing ReshapeWithTooManyDimensionsShouldFail
 Testing ReshapeWithTooManySpecialDimensionsShouldFail
-tensorflow/lite/micro/kernels/reshape.cc:58 stretch_dim != -1 (0 != -1)
-tensorflow/lite/micro/kernels/reshape.cc:58 stretch_dim != -1 (0 != -1)
-tensorflow/lite/micro/kernels/reshape.cc:77 ReshapeOutput(context, node) != kTfLiteOk (1 != 0)
+tensorflow/lite/micro/kernels/reshape.cc:62 stretch_dim != -1 (0 != -1)
+tensorflow/lite/micro/kernels/reshape.cc:62 stretch_dim != -1 (0 != -1)
+tensorflow/lite/micro/kernels/reshape.cc:84 ReshapeOutput(context, node) != kTfLiteOk (1 != 0)
 Testing ReshapeWithInvalidShapeShouldFail
-tensorflow/lite/micro/kernels/reshape.cc:70 num_input_elements != num_output_elements (4 != 2)
-tensorflow/lite/micro/kernels/reshape.cc:70 num_input_elements != num_output_elements (4 != 2)
-tensorflow/lite/micro/kernels/reshape.cc:77 ReshapeOutput(context, node) != kTfLiteOk (1 != 0)
+tensorflow/lite/micro/kernels/reshape.cc:74 num_input_elements != num_output_elements (4 != 2)
+tensorflow/lite/micro/kernels/reshape.cc:74 num_input_elements != num_output_elements (4 != 2)
+tensorflow/lite/micro/kernels/reshape.cc:84 ReshapeOutput(context, node) != kTfLiteOk (1 != 0)
 Testing ReshapeWithRegularShapesShouldSucceed
 Testing ReshapeWithStretchDimensionShouldSucceed
 Testing ReshapeWithScalarOutputShouldSucceed
 Testing ReshapeWithLegacyScalarOutputShouldSucceed
-tensorflow/lite/micro/kernels/reshape.cc:70 num_input_elements != num_output_elements (1 != 0)
-tensorflow/lite/micro/kernels/reshape.cc:70 num_input_elements != num_output_elements (1 != 0)
-tensorflow/lite/micro/kernels/reshape.cc:77 ReshapeOutput(context, node) != kTfLiteOk (1 != 0)
+tensorflow/lite/micro/kernels/reshape.cc:74 num_input_elements != num_output_elements (1 != 0)
+tensorflow/lite/micro/kernels/reshape.cc:74 num_input_elements != num_output_elements (1 != 0)
+tensorflow/lite/micro/kernels/reshape.cc:84 ReshapeOutput(context, node) != kTfLiteOk (1 != 0)
 8/8 tests passed
 ~~~ALL TESTS PASSED~~~
 
