@@ -22866,3 +22866,36 @@ KeywordRunNIerations(10) took 1626940 ticks (1626 ms)
 [RecordingMicroAllocator] 'Persistent buffer data' used 672 bytes with alignment overhead (requested 552 bytes for 19 allocations)
 [RecordingMicroAllocator] 'TfLiteTensor variable buffer data' used 10248 bytes with alignment overhead (requested 10240 bytes for 7 allocations)
 [RecordingMicroAllocator] 'NodeAndRegistration struct' used 480 bytes with alignment overhead (requested 480 bytes for 15 NodeAndRegistration structs)
+
+Thu Feb 24 06:45:15 PST 2022
+tflite-micro version: 1a0287fc5fa81fa6aa1dcfb0c5b2e01f74164393
+InitializeKeywordRunner took 174748 ticks (174 ms).
+
+KeywordRunNIerations(1) took 162712 ticks (162 ms)
+QUANTIZE took 3590 ticks (3 ms).
+SVDF took 30718 ticks (30 ms).
+FULLY_CONNECTED took 5000 ticks (5 ms).
+SVDF took 17918 ticks (17 ms).
+FULLY_CONNECTED took 5000 ticks (5 ms).
+SVDF took 17918 ticks (17 ms).
+FULLY_CONNECTED took 5000 ticks (5 ms).
+SVDF took 17918 ticks (17 ms).
+FULLY_CONNECTED took 5000 ticks (5 ms).
+SVDF took 16286 ticks (16 ms).
+SVDF took 17566 ticks (17 ms).
+SVDF took 17566 ticks (17 ms).
+FULLY_CONNECTED took 1084 ticks (1 ms).
+SOFTMAX took 1699 ticks (1 ms).
+QUANTIZE took 449 ticks (0 ms).
+
+KeywordRunNIerations(10) took 1626940 ticks (1626 ms)
+
+[RecordingMicroAllocator] Arena allocation total 13276 bytes
+[RecordingMicroAllocator] Arena allocation head 672 bytes
+[RecordingMicroAllocator] Arena allocation tail 12604 bytes
+[RecordingMicroAllocator] 'TfLiteEvalTensor data' used 648 bytes with alignment overhead (requested 648 bytes for 54 allocations)
+[RecordingMicroAllocator] 'Persistent TfLiteTensor data' used 80 bytes with alignment overhead (requested 80 bytes for 2 tensors)
+[RecordingMicroAllocator] 'Persistent TfLiteTensor quantization data' used 40 bytes with alignment overhead (requested 40 bytes for 4 allocations)
+[RecordingMicroAllocator] 'Persistent buffer data' used 672 bytes with alignment overhead (requested 552 bytes for 19 allocations)
+[RecordingMicroAllocator] 'TfLiteTensor variable buffer data' used 10248 bytes with alignment overhead (requested 10240 bytes for 7 allocations)
+[RecordingMicroAllocator] 'NodeAndRegistration struct' used 480 bytes with alignment overhead (requested 480 bytes for 15 NodeAndRegistration structs)
