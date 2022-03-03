@@ -1,4 +1,4 @@
-Building at 04d4e9d33cf7472783ac8b966d37703a44691555
+Building at e8df576b38990f852396c0bc91db26ddcccddc3a
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -22,27 +22,27 @@ find: '../google/': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/kissfft already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
---2022-03-02 12:44:35--  https://github.com/foss-xtensa/tflmlib_vision/raw/main/archive/xi_annlib_vision_p6_22_02_24.zip
-Resolving github.com (github.com)... 140.82.112.3
-Connecting to github.com (github.com)|140.82.112.3|:443... connected.
+--2022-03-02 16:40:26--  https://github.com/foss-xtensa/tflmlib_vision/raw/main/archive/xi_annlib_vision_p6_22_02_24.zip
+Resolving github.com (github.com)... 140.82.114.4
+Connecting to github.com (github.com)|140.82.114.4|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://raw.githubusercontent.com/foss-xtensa/tflmlib_vision/main/archive/xi_annlib_vision_p6_22_02_24.zip [following]
---2022-03-02 12:44:36--  https://raw.githubusercontent.com/foss-xtensa/tflmlib_vision/main/archive/xi_annlib_vision_p6_22_02_24.zip
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8001::154, 2606:50c0:8003::154, 2606:50c0:8000::154, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8001::154|:443... connected.
+--2022-03-02 16:40:26--  https://raw.githubusercontent.com/foss-xtensa/tflmlib_vision/main/archive/xi_annlib_vision_p6_22_02_24.zip
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8000::154, 2606:50c0:8003::154, 2606:50c0:8002::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8000::154|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 331956 (324K) [application/zip]
-Saving to: '/tmp/tmp.DddUJT5LwU/xi_annlib_vision_p6.zip'
+Saving to: '/tmp/tmp.xdk3eCO2vp/xi_annlib_vision_p6.zip'
 
-     0K .......... .......... .......... .......... .......... 15% 22.2M 0s
-    50K .......... .......... .......... .......... .......... 30% 24.4M 0s
-   100K .......... .......... .......... .......... .......... 46% 95.6M 0s
-   150K .......... .......... .......... .......... .......... 61% 89.2M 0s
-   200K .......... .......... .......... .......... .......... 77% 37.4M 0s
+     0K .......... .......... .......... .......... .......... 15% 22.9M 0s
+    50K .......... .......... .......... .......... .......... 30% 25.3M 0s
+   100K .......... .......... .......... .......... .......... 46% 88.6M 0s
+   150K .......... .......... .......... .......... .......... 61% 92.5M 0s
+   200K .......... .......... .......... .......... .......... 77% 41.7M 0s
    250K .......... .......... .......... .......... .......... 92%  114M 0s
-   300K .......... .......... ....                            100%  112M=0.007s
+   300K .......... .......... ....                            100% 59.4M=0.007s
 
-2022-03-02 12:44:36 (44.0 MB/s) - '/tmp/tmp.DddUJT5LwU/xi_annlib_vision_p6.zip' saved [331956/331956]
+2022-03-02 16:40:26 (44.4 MB/s) - '/tmp/tmp.xdk3eCO2vp/xi_annlib_vision_p6.zip' saved [331956/331956]
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DNDEBUG -DTF_LITE_STRIP_ERROR_STRINGS -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Wno-unused-private-field -DXI_ERROR_LEVEL=XI_ERROR_LEVEL_NO_ERROR -DCNNRT_PERF_LEVEL=CNNRT_PERF_LEVEL_NONE -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xi_annlib_vision_p6/ -Itensorflow/lite/micro/tools/make/downloads/xi_annlib_vision_p6/include/  -Itensorflow/lite/micro/tools/make/downloads/hifi_fft/ -Itensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/benchmarks/keyword_benchmark.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/benchmarks/keyword_benchmark.o
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DNDEBUG -DTF_LITE_STRIP_ERROR_STRINGS -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -Wno-unused-private-field -DXI_ERROR_LEVEL=XI_ERROR_LEVEL_NO_ERROR -DCNNRT_PERF_LEVEL=CNNRT_PERF_LEVEL_NONE -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xi_annlib_vision_p6/ -Itensorflow/lite/micro/tools/make/downloads/xi_annlib_vision_p6/include/  -Itensorflow/lite/micro/tools/make/downloads/hifi_fft/ -Itensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/genfiles/tensorflow/lite/micro/models/keyword_scrambled_model_data.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/obj/core/tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_release/genfiles/tensorflow/lite/micro/models/keyword_scrambled_model_data.o
