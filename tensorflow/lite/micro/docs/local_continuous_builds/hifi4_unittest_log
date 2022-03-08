@@ -1,4 +1,4 @@
-Building at cd15c14017bcb33d1ed55ee27c5fab63eef74ad6
+Building at a6f1b9ebcdbab826580b0c5f2b9fcccbc388256f
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -1436,14 +1436,14 @@ xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwin
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wmissing-field-initializers -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=F1_190305_swupgrade -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DHIFI4 -mlongcalls -DNNLIB_V2 -Wno-shadow -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/kernels/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/nnlib/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/common/include/ -Itensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/algo/ndsp/hifi4/include/ -Itensorflow/lite/micro/tools/make/downloads/hifi_fft/ -Itensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -o tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/bin/recording_micro_allocator_test tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/obj/core/tensorflow/lite/micro/recording_micro_allocator_test.o tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/obj/core/tensorflow/lite/micro/testing/test_conv_model.o tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/lib/libtensorflow-microlite.a -Wl,--fatal-warnings -Wl,--gc-sections -lm
 tensorflow/lite/micro/testing/test_xtensa_binary.sh tensorflow/lite/micro/tools/make/gen/xtensa_hifi4_default/bin/recording_micro_allocator_test '~~~ALL TESTS PASSED~~~' xtensa
 Testing TestRecordsTfLiteEvalTensorArrayData
-[RecordingMicroAllocator] Arena allocation total 8380 bytes
+[RecordingMicroAllocator] Arena allocation total 8384 bytes
 [RecordingMicroAllocator] Arena allocation head 7744 bytes
-[RecordingMicroAllocator] Arena allocation tail 636 bytes
+[RecordingMicroAllocator] Arena allocation tail 640 bytes
 [RecordingMicroAllocator] 'TfLiteEvalTensor data' used 180 bytes with alignment overhead (requested 180 bytes for 15 allocations)
 [RecordingMicroAllocator] 'NodeAndRegistration struct' used 224 bytes with alignment overhead (requested 224 bytes for 7 NodeAndRegistration structs)
-[RecordingMicroAllocator] Arena allocation total 8380 bytes
+[RecordingMicroAllocator] Arena allocation total 8384 bytes
 [RecordingMicroAllocator] Arena allocation head 7744 bytes
-[RecordingMicroAllocator] Arena allocation tail 636 bytes
+[RecordingMicroAllocator] Arena allocation tail 640 bytes
 [RecordingMicroAllocator] 'TfLiteEvalTensor data' used 180 bytes with alignment overhead (requested 180 bytes for 15 allocations)
 [RecordingMicroAllocator] 'NodeAndRegistration struct' used 224 bytes with alignment overhead (requested 224 bytes for 7 NodeAndRegistration structs)
 Testing TestRecordsNodeAndRegistrationArrayData
@@ -1531,7 +1531,7 @@ Testing TestInterpreterDoesNotAllocateUntilInvoke
 [RecordingMicroAllocator] 'TfLiteEvalTensor data' used 120 bytes with alignment overhead (requested 120 bytes for 10 allocations)
 [RecordingMicroAllocator] 'Persistent TfLiteTensor data' used 80 bytes with alignment overhead (requested 80 bytes for 2 tensors)
 [RecordingMicroAllocator] 'Persistent buffer data' used 24 bytes with alignment overhead (requested 8 bytes for 2 allocations)
-[RecordingMicroAllocator] 'TfLiteTensor variable buffer data' used 48 bytes with alignment overhead (requested 12 bytes for 3 allocations)
+[RecordingMicroAllocator] 'TfLiteTensor variable buffer data' used 44 bytes with alignment overhead (requested 12 bytes for 3 allocations)
 [RecordingMicroAllocator] 'NodeAndRegistration struct' used 96 bytes with alignment overhead (requested 96 bytes for 3 NodeAndRegistration structs)
 Testing TestInterpreterMultipleInputs
 Testing TestInterpreterNullInputsAndOutputs
@@ -1609,7 +1609,7 @@ Failed to allocate tail memory. Requested: 2048, available 1024, missing: 1024
 Testing TestRecordsHeadSizeAdjustment
 Testing TestRecordsMisalignedHeadSizeAdjustments
 Testing TestDoesNotRecordFailedTailAllocations
-Failed to set head size. Requested: 2048, available 1024, missing: 1024
+Failed to resize buffer. Requested: 2048, available 1024, missing: 1024
 6/6 tests passed
 ~~~ALL TESTS PASSED~~~
 
@@ -1630,7 +1630,7 @@ Failed to allocate tail memory. Requested: 768, available 256, missing: 512
 Testing TestTempAllocations
 Testing TestResetTempAllocations
 Testing TestEnsureHeadSizeWithoutResettingTemp
-Internal error: SetHeadBufferSize() needs to be called after ResetTempAllocations().
+Internal error: either buffer is not resizable or ResetTempAllocations() is not called before ResizeBuffer().
 Testing TestIsAllTempDeallocated
 Number of allocated temp buffers: 1. Checksum passing status: 0
 Number of allocated temp buffers: 2. Checksum passing status: 0
