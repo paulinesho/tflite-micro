@@ -23,32 +23,32 @@ tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping 
 tensorflow/lite/micro/tools/make/downloads/kissfft already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 URL transformed to HTTPS due to an HSTS policy
---2022-04-09 12:15:30--  https://github.com/foss-xtensa/nnlib-hifi5/raw/master/archive/xa_nnlib_hifi5_06_30.zip
-Resolving github.com (github.com)... 140.82.112.3
-Connecting to github.com (github.com)|140.82.112.3|:443... connected.
+--2022-04-09 16:11:32--  https://github.com/foss-xtensa/nnlib-hifi5/raw/master/archive/xa_nnlib_hifi5_06_30.zip
+Resolving github.com (github.com)... 140.82.114.3
+Connecting to github.com (github.com)|140.82.114.3|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi5/master/archive/xa_nnlib_hifi5_06_30.zip [following]
---2022-04-09 12:15:31--  https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi5/master/archive/xa_nnlib_hifi5_06_30.zip
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8003::154, 2606:50c0:8002::154, 2606:50c0:8001::154, ...
-Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8003::154|:443... connected.
+--2022-04-09 16:11:33--  https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi5/master/archive/xa_nnlib_hifi5_06_30.zip
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8000::154, 2606:50c0:8002::154, 2606:50c0:8003::154, ...
+Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8000::154|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 588979 (575K) [application/zip]
-Saving to: '/tmp/tmp.ehQJt3wI8y/xa_nnlib_hifi5.zip'
+Saving to: '/tmp/tmp.BeyeOsxyuN/xa_nnlib_hifi5.zip'
 
-     0K .......... .......... .......... .......... ..........  8% 22.8M 0s
-    50K .......... .......... .......... .......... .......... 17% 22.5M 0s
-   100K .......... .......... .......... .......... .......... 26%  139M 0s
-   150K .......... .......... .......... .......... .......... 34% 36.8M 0s
-   200K .......... .......... .......... .......... .......... 43% 86.3M 0s
-   250K .......... .......... .......... .......... .......... 52% 90.4M 0s
-   300K .......... .......... .......... .......... .......... 60% 99.9M 0s
-   350K .......... .......... .......... .......... .......... 69%  104M 0s
-   400K .......... .......... .......... .......... .......... 78% 90.4M 0s
-   450K .......... .......... .......... .......... .......... 86%  104M 0s
-   500K .......... .......... .......... .......... .......... 95%  139M 0s
-   550K .......... .......... .....                           100% 88.6M=0.01s
+     0K .......... .......... .......... .......... ..........  8% 21.3M 0s
+    50K .......... .......... .......... .......... .......... 17% 23.6M 0s
+   100K .......... .......... .......... .......... .......... 26% 99.3M 0s
+   150K .......... .......... .......... .......... .......... 34% 87.7M 0s
+   200K .......... .......... .......... .......... .......... 43% 35.5M 0s
+   250K .......... .......... .......... .......... .......... 52%  125M 0s
+   300K .......... .......... .......... .......... .......... 60% 92.5M 0s
+   350K .......... .......... .......... .......... .......... 69% 77.4M 0s
+   400K .......... .......... .......... .......... .......... 78% 80.0M 0s
+   450K .......... .......... .......... .......... .......... 86%  138M 0s
+   500K .......... .......... .......... .......... .......... 95%  112M 0s
+   550K .......... .......... .....                           100%  135M=0.01s
 
-2022-04-09 12:15:31 (57.9 MB/s) - '/tmp/tmp.ehQJt3wI8y/xa_nnlib_hifi5.zip' saved [588979/588979]
+2022-04-09 16:11:33 (56.6 MB/s) - '/tmp/tmp.BeyeOsxyuN/xa_nnlib_hifi5.zip' saved [588979/588979]
 
 Switched to a new branch 'tflm'
 Applying /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/.//../../ext_libs/xa_nnlib_hifi5.patch to /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi5/./
@@ -103,7 +103,6 @@ tensorflow/lite/micro/memory_helpers.cc:143:3: error: too many arguments provide
 /usr/local/google/home/advaitjain/xtensa/XtDevTools/install/tools/RI-2020.4-linux/XtensaTools/xtensa-elf/include/xtensa/xtensa-types.h:60:9: note: macro 'UNUSED' defined here
 #define UNUSED(x)       ((void)(x))
         ^
-1 error generated.
 tensorflow/lite/micro/memory_helpers.cc:143:3: error: use of undeclared identifier 'UNUSED'
   TF_LITE_ENSURE(context, input2->dims != nullptr);
   ^
@@ -146,8 +145,6 @@ tensorflow/lite/micro/memory_helpers.cc:147:3: error: too many arguments provide
 /usr/local/google/home/advaitjain/xtensa/XtDevTools/install/tools/RI-2020.4-linux/XtensaTools/xtensa-elf/include/xtensa/xtensa-types.h:60:9: note: macro 'UNUSED' defined here
 #define UNUSED(x)       ((void)(x))
         ^
-make: *** [tensorflow/lite/micro/tools/make/Makefile:626: tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_release/obj/core/tensorflow/lite/micro/flatbuffer_utils.o] Error 1
-make: *** Waiting for unfinished jobs....
 tensorflow/lite/micro/memory_helpers.cc:147:3: error: use of undeclared identifier 'UNUSED'
   TF_LITE_ENSURE(context, output->type == input->type);
   ^
@@ -158,7 +155,8 @@ tensorflow/lite/micro/memory_helpers.cc:147:3: error: use of undeclared identifi
 #define TF_LITE_KERNEL_LOG(context, ...) UNUSED(__VA_ARGS__)
                                          ^
 8 errors generated.
-make: *** [tensorflow/lite/micro/tools/make/Makefile:625: tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_release/obj/core/tensorflow/lite/micro/memory_helpers.o] Error 1
+make: *** [tensorflow/lite/micro/tools/make/Makefile:626: tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_release/obj/core/tensorflow/lite/micro/memory_helpers.o] Error 1
+make: *** Waiting for unfinished jobs....
 tensorflow/lite/micro/micro_allocator.cc:785:3: error: too many arguments provided to function-like macro invocation
   TF_LITE_ENSURE(error_reporter_, planner_arena != nullptr);
   ^
@@ -180,5 +178,7 @@ tensorflow/lite/micro/micro_allocator.cc:785:3: error: use of undeclared identif
 ./tensorflow/lite/c/common.h:177:42: note: expanded from macro 'TF_LITE_KERNEL_LOG'
 #define TF_LITE_KERNEL_LOG(context, ...) UNUSED(__VA_ARGS__)
                                          ^
+1 error generated.
+make: *** [tensorflow/lite/micro/tools/make/Makefile:625: tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_release/obj/core/tensorflow/lite/micro/flatbuffer_utils.o] Error 1
 2 errors generated.
 make: *** [tensorflow/lite/micro/tools/make/Makefile:625: tensorflow/lite/micro/tools/make/gen/xtensa_hifi5_release/obj/core/tensorflow/lite/micro/micro_allocator.o] Error 1
