@@ -1,22 +1,117 @@
-Building at b4b0c56be11a184a450c74c218bbb0b9d4661816
+Building at 50d9ef45ba8d578022042f9ebe743c7f078c8e31
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
---2022-06-18 15:56:08--  https://github.com/google/flatbuffers/archive/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip
-Resolving github.com (github.com)... failed: Temporary failure in name resolution.
-wget: unable to resolve host address 'github.com'
-tensorflow/lite/micro/tools/make/Makefile:481: *** Something went wrong with the flatbuffers download: .  Stop.
+--2022-06-22 15:56:09--  https://github.com/google/flatbuffers/archive/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip
+Resolving github.com (github.com)... 140.82.113.3
+Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/google/flatbuffers/zip/f28c2b29364970e23c8ba3d751ca188f8a08c71e [following]
+--2022-06-22 15:56:10--  https://codeload.github.com/google/flatbuffers/zip/f28c2b29364970e23c8ba3d751ca188f8a08c71e
+Resolving codeload.github.com (codeload.github.com)... 192.30.255.121
+Connecting to codeload.github.com (codeload.github.com)|192.30.255.121|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 2404604 (2.3M) [application/zip]
+Saving to: '/tmp/tmp.71F3SYWMT2/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip'
+
+     0K .......... .......... .......... .......... ..........  2% 1.02M 2s
+    50K .......... .......... .......... .......... ..........  4% 2.04M 2s
+   100K .......... .......... .......... .......... ..........  6% 66.3M 1s
+   150K .......... .......... .......... .......... ..........  8% 2.12M 1s
+   200K .......... .......... .......... .......... .......... 10% 60.0M 1s
+   250K .......... .......... .......... .......... .......... 12% 69.3M 1s
+   300K .......... .......... .......... .......... .......... 14% 89.7M 1s
+   350K .......... .......... .......... .......... .......... 17% 2.24M 1s
+   400K .......... .......... .......... .......... .......... 19%  153M 1s
+   450K .......... .......... .......... .......... .......... 21%  105M 0s
+   500K .......... .......... .......... .......... .......... 23%  108M 0s
+   550K .......... .......... .......... .......... .......... 25%  119M 0s
+   600K .......... .......... .......... .......... .......... 27%  129M 0s
+   650K .......... .......... .......... .......... .......... 29%  109M 0s
+   700K .......... .......... .......... .......... .......... 31% 94.2M 0s
+   750K .......... .......... .......... .......... .......... 34% 2.35M 0s
+   800K .......... .......... .......... .......... .......... 36%  119M 0s
+   850K .......... .......... .......... .......... .......... 38%  119M 0s
+   900K .......... .......... .......... .......... .......... 40% 75.8M 0s
+   950K .......... .......... .......... .......... .......... 42%  134M 0s
+  1000K .......... .......... .......... .......... .......... 44%  152M 0s
+  1050K .......... .......... .......... .......... .......... 46% 97.7M 0s
+  1100K .......... .......... .......... .......... .......... 48%  103M 0s
+  1150K .......... .......... .......... .......... .......... 51%  112M 0s
+  1200K .......... .......... .......... .......... .......... 53% 98.4M 0s
+  1250K .......... .......... .......... .......... .......... 55%  148M 0s
+  1300K .......... .......... .......... .......... .......... 57%  107M 0s
+  1350K .......... .......... .......... .......... .......... 59% 1.94M 0s
+  1400K .......... .......... .......... .......... .......... 61%  127M 0s
+  1450K .......... .......... .......... .......... .......... 63%  211M 0s
+  1500K .......... .......... .......... .......... .......... 66% 2.76M 0s
+  1550K .......... .......... .......... .......... .......... 68%  202M 0s
+  1600K .......... .......... .......... .......... .......... 70%  212M 0s
+  1650K .......... .......... .......... .......... .......... 72%  211M 0s
+  1700K .......... .......... .......... .......... .......... 74%  111M 0s
+  1750K .......... .......... .......... .......... .......... 76%  211M 0s
+  1800K .......... .......... .......... .......... .......... 78%  211M 0s
+  1850K .......... .......... .......... .......... .......... 80%  210M 0s
+  1900K .......... .......... .......... .......... .......... 83%  172M 0s
+  1950K .......... .......... .......... .......... .......... 85%  215M 0s
+  2000K .......... .......... .......... .......... .......... 87%  212M 0s
+  2050K .......... .......... .......... .......... .......... 89%  190M 0s
+  2100K .......... .......... .......... .......... .......... 91%  204M 0s
+  2150K .......... .......... .......... .......... .......... 93% 26.1M 0s
+  2200K .......... .......... .......... .......... .......... 95%  138M 0s
+  2250K .......... .......... .......... .......... .......... 97%  134M 0s
+  2300K .......... .......... .......... .......... ........  100%  171M=0.2s
+
+2022-06-22 15:56:10 (11.6 MB/s) - '/tmp/tmp.71F3SYWMT2/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip' saved [2404604/2404604]
+
+Switched to a new branch 'tflm'
+Applying /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/flatbuffers/.//../../flatbuffers.patch to /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/flatbuffers/./
+--2022-06-22 15:56:14--  https://github.com/mborgerding/kissfft/archive/refs/tags/v130.zip
+Resolving github.com (github.com)... 140.82.113.3
+Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+HTTP request sent, awaiting response... 302 Found
+Location: https://codeload.github.com/mborgerding/kissfft/zip/refs/tags/v130 [following]
+--2022-06-22 15:56:15--  https://codeload.github.com/mborgerding/kissfft/zip/refs/tags/v130
+Resolving codeload.github.com (codeload.github.com)... 192.30.255.121
+Connecting to codeload.github.com (codeload.github.com)|192.30.255.121|:443... connected.
+HTTP request sent, awaiting response... 200 OK
+Length: 60513 (59K) [application/zip]
+Saving to: '/tmp/tmp.fbULaAVb4B/v130.zip'
+
+     0K .......... .......... .......... .......... .......... 84% 1.07M 0s
+    50K .........                                             100% 49.2M=0.05s
+
+2022-06-22 15:56:15 (1.26 MB/s) - '/tmp/tmp.fbULaAVb4B/v130.zip' saved [60513/60513]
+
+Switched to a new branch 'tflm'
+Applying /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/kissfft/.//../../kissfft.patch to /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/kissfft/./
+Cloning into 'tensorflow/lite/micro/tools/make/downloads/pigweed'...
+Note: switching to '47268dff45019863e20438ca3746c6c62df6ef09'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 47268dff pw_hdlc_lite: Client I/O improvements
+Switched to a new branch 'tflm'
+Applying /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/pigweed/.//../../pigweed.patch to /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/pigweed/./
+rm -rf tensorflow/lite/micro/tools/make/gen
 
 make -f tensorflow/lite/micro/tools/make/Makefile third_party_downloads
 
---2022-06-18 15:56:08--  https://github.com/google/flatbuffers/archive/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip
-Resolving github.com (github.com)... failed: Temporary failure in name resolution.
-wget: unable to resolve host address 'github.com'
-tensorflow/lite/micro/tools/make/Makefile:481: *** Something went wrong with the flatbuffers download: .  Stop.
-
-make -f tensorflow/lite/micro/tools/make/Makefile TARGET=xtensa OPTIMIZED_KERNEL_DIR=xtensa TARGET_ARCH=hifi4 XTENSA_CORE=F1_190305_swupgrade keyword_benchmark BUILD_TYPE=release -j8
-
---2022-06-18 15:56:09--  https://github.com/google/flatbuffers/archive/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip
-Resolving github.com (github.com)... failed: Temporary failure in name resolution.
-wget: unable to resolve host address 'github.com'
-tensorflow/lite/micro/tools/make/Makefile:481: *** Something went wrong with the flatbuffers download: .  Stop.
+tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
+tensorflow/lite/micro/tools/make/downloads/kissfft already exists, skipping the download.
+tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
+tensorflow/lite/micro/tools/make/download_and_extract.sh "https://github.com/google/gemmlowp/archive/719139ce755a0f31cbf1c37f7f98adcc7fc9f425.zip" "7e8191b24853d75de2af87622ad293ba" tensorflow/lite/micro/tools/make/downloads/gemmlowp  
+downloading https://github.com/google/gemmlowp/archive/719139ce755a0f31cbf1c37f7f98adcc7fc9f425.zip
