@@ -1,87 +1,87 @@
-Building at d0d1d6532d7b3f8b2147a858816a821649033dcd
+Building at 0e825b99b34596907f53e1fa245028576414cfd0
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
---2022-07-12 15:56:07--  https://github.com/google/flatbuffers/archive/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip
-Resolving github.com (github.com)... 140.82.112.4
-Connecting to github.com (github.com)|140.82.112.4|:443... connected.
+--2022-07-13 06:00:08--  https://github.com/google/flatbuffers/archive/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip
+Resolving github.com (github.com)... 140.82.113.4
+Connecting to github.com (github.com)|140.82.113.4|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://codeload.github.com/google/flatbuffers/zip/f28c2b29364970e23c8ba3d751ca188f8a08c71e [following]
---2022-07-12 15:56:08--  https://codeload.github.com/google/flatbuffers/zip/f28c2b29364970e23c8ba3d751ca188f8a08c71e
-Resolving codeload.github.com (codeload.github.com)... 140.82.114.10
-Connecting to codeload.github.com (codeload.github.com)|140.82.114.10|:443... connected.
+--2022-07-13 06:00:09--  https://codeload.github.com/google/flatbuffers/zip/f28c2b29364970e23c8ba3d751ca188f8a08c71e
+Resolving codeload.github.com (codeload.github.com)... 140.82.113.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.113.10|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: unspecified [application/zip]
-Saving to: '/tmp/tmp.LJqfyqLhkU/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip'
+Saving to: '/tmp/tmp.BphcSy8XA0/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip'
 
-     0K .......... .......... .......... .......... ..........  399K
-    50K .......... .......... .......... .......... ..........  801K
-   100K .......... .......... .......... .......... .......... 67.3M
-   150K .......... .......... .......... .......... ..........  812K
-   200K .......... .......... .......... .......... .......... 58.3M
-   250K .......... .......... .......... .......... .......... 69.2M
-   300K .......... .......... .......... .......... .......... 91.8M
-   350K .......... .......... .......... .......... .......... 1.15M
-   400K .......... .......... .......... .......... .......... 2.63M
-   450K .......... .......... .......... .......... .......... 60.1M
-   500K .......... .......... .......... .......... .......... 59.1M
-   550K .......... .......... .......... .......... ..........  126M
-   600K .......... .......... .......... .......... ..........  160M
-   650K .......... .......... .......... .......... ..........  167M
-   700K .......... .......... .......... .......... .......... 1.20M
-   750K .......... .......... .......... .......... ..........  120M
-   800K .......... .......... .......... .......... .......... 2.70M
+     0K .......... .......... .......... .......... ..........  384K
+    50K .......... .......... .......... .......... ..........  769K
+   100K .......... .......... .......... .......... .......... 52.9M
+   150K .......... .......... .......... .......... ..........  780K
+   200K .......... .......... .......... .......... .......... 49.2M
+   250K .......... .......... .......... .......... .......... 1.23M
+   300K .......... .......... .......... .......... .......... 2.00M
+   350K .......... .......... .......... .......... .......... 54.0M
+   400K .......... .......... .......... .......... .......... 78.5M
+   450K .......... .......... .......... .......... ..........  132M
+   500K .......... .......... .......... .......... ..........  128M
+   550K .......... .......... .......... .......... ..........  166M
+   600K .......... .......... .......... .......... ..........  216M
+   650K .......... .......... .......... .......... .......... 1.29M
+   700K .......... .......... .......... .......... .......... 2.03M
+   750K .......... .......... .......... .......... ..........  133M
+   800K .......... .......... .......... .......... ..........  115M
    850K .......... .......... .......... .......... ..........  108M
    900K .......... .......... .......... .......... ..........  118M
-   950K .......... .......... .......... .......... ..........  119M
-  1000K .......... .......... .......... .......... .......... 92.0M
-  1050K .......... .......... .......... .......... ..........  118M
-  1100K .......... .......... .......... .......... ..........  107M
-  1150K .......... .......... .......... .......... ..........  118M
-  1200K .......... .......... .......... .......... ..........  118M
-  1250K .......... .......... .......... .......... ..........  108M
-  1300K .......... .......... .......... .......... ..........  119M
-  1350K .......... .......... .......... .......... ..........  118M
-  1400K .......... .......... .......... .......... ..........  790K
-  1450K .......... .......... .......... .......... .......... 1.28M
-  1500K .......... .......... .......... .......... ..........  149M
-  1550K .......... .......... .......... .......... ..........  197M
-  1600K .......... .......... .......... .......... .......... 88.6M
-  1650K .......... .......... .......... .......... ..........  199M
-  1700K .......... .......... .......... .......... ..........  216M
-  1750K .......... .......... .......... .......... ..........  181M
-  1800K .......... .......... .......... .......... ..........  213M
-  1850K .......... .......... .......... .......... ..........  216M
-  1900K .......... .......... .......... .......... ..........  217M
-  1950K .......... .......... .......... .......... ..........  194M
-  2000K .......... .......... .......... .......... ..........  218M
-  2050K .......... .......... .......... .......... ..........  207M
-  2100K .......... .......... .......... .......... ..........  181M
-  2150K .......... .......... .......... .......... ..........  213M
-  2200K .......... .......... .......... .......... .......... 2.44M
-  2250K .......... .......... .......... .......... ..........  139M
-  2300K .......... .......... .......... .......... ........    191M=0.5s
+   950K .......... .......... .......... .......... .......... 88.2M
+  1000K .......... .......... .......... .......... .......... 89.0M
+  1050K .......... .......... .......... .......... ..........  114M
+  1100K .......... .......... .......... .......... ..........  146M
+  1150K .......... .......... .......... .......... ..........  114M
+  1200K .......... .......... .......... .......... .......... 91.2M
+  1250K .......... .......... .......... .......... ..........  144M
+  1300K .......... .......... .......... .......... ..........  110M
+  1350K .......... .......... .......... .......... ..........  758K
+  1400K .......... .......... .......... .......... .......... 1.34M
+  1450K .......... .......... .......... .......... ..........  214M
+  1500K .......... .......... .......... .......... ..........  215M
+  1550K .......... .......... .......... .......... ..........  198M
+  1600K .......... .......... .......... .......... ..........  207M
+  1650K .......... .......... .......... .......... ..........  215M
+  1700K .......... .......... .......... .......... ..........  214M
+  1750K .......... .......... .......... .......... ..........  105M
+  1800K .......... .......... .......... .......... ..........  181M
+  1850K .......... .......... .......... .......... ..........  201M
+  1900K .......... .......... .......... .......... ..........  215M
+  1950K .......... .......... .......... .......... ..........  183M
+  2000K .......... .......... .......... .......... ..........  219M
+  2050K .......... .......... .......... .......... ..........  217M
+  2100K .......... .......... .......... .......... ..........  220M
+  2150K .......... .......... .......... .......... ..........  179M
+  2200K .......... .......... .......... .......... .......... 2.00M
+  2250K .......... .......... .......... .......... ..........  111M
+  2300K .......... .......... .......... .......... ........    181M=0.5s
 
-2022-07-12 15:56:09 (4.53 MB/s) - '/tmp/tmp.LJqfyqLhkU/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip' saved [2404604]
+2022-07-13 06:00:10 (4.35 MB/s) - '/tmp/tmp.BphcSy8XA0/f28c2b29364970e23c8ba3d751ca188f8a08c71e.zip' saved [2404604]
 
 Switched to a new branch 'tflm'
 Applying /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/flatbuffers/.//../../flatbuffers.patch to /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/flatbuffers/./
---2022-07-12 15:56:12--  https://github.com/mborgerding/kissfft/archive/refs/tags/v130.zip
-Resolving github.com (github.com)... 140.82.112.4
-Connecting to github.com (github.com)|140.82.112.4|:443... connected.
+--2022-07-13 06:00:13--  https://github.com/mborgerding/kissfft/archive/refs/tags/v130.zip
+Resolving github.com (github.com)... 140.82.113.4
+Connecting to github.com (github.com)|140.82.113.4|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://codeload.github.com/mborgerding/kissfft/zip/refs/tags/v130 [following]
---2022-07-12 15:56:12--  https://codeload.github.com/mborgerding/kissfft/zip/refs/tags/v130
-Resolving codeload.github.com (codeload.github.com)... 140.82.114.10
-Connecting to codeload.github.com (codeload.github.com)|140.82.114.10|:443... connected.
+--2022-07-13 06:00:14--  https://codeload.github.com/mborgerding/kissfft/zip/refs/tags/v130
+Resolving codeload.github.com (codeload.github.com)... 140.82.113.10
+Connecting to codeload.github.com (codeload.github.com)|140.82.113.10|:443... connected.
 HTTP request sent, awaiting response... 200 OK
-Length: unspecified [application/zip]
-Saving to: '/tmp/tmp.dTpRS4pP8m/v130.zip'
+Length: 60513 (59K) [application/zip]
+Saving to: '/tmp/tmp.bjhDx6XkVf/v130.zip'
 
-     0K .......... .......... .......... .......... ..........  400K
-    50K .........                                              80.0M=0.1s
+     0K .......... .......... .......... .......... .......... 84%  371K 0s
+    50K .........                                             100% 63.2M=0.1s
 
-2022-07-12 15:56:13 (473 KB/s) - '/tmp/tmp.dTpRS4pP8m/v130.zip' saved [60513]
+2022-07-13 06:00:14 (438 KB/s) - '/tmp/tmp.bjhDx6XkVf/v130.zip' saved [60513/60513]
 
 Switched to a new branch 'tflm'
 Applying /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/kissfft/.//../../kissfft.patch to /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/kissfft/./
@@ -119,8 +119,8 @@ tensorflow/lite/micro/tools/make/download_and_extract.sh "https://github.com/goo
 downloading https://github.com/google/gemmlowp/archive/719139ce755a0f31cbf1c37f7f98adcc7fc9f425.zip
 + [[ 0 -eq 0 ]]
 + break
+++ openssl dgst -md5 /tmp/tmp.ohhWce5wKz/temp_file
 ++ sed 's/.* //g'
-++ openssl dgst -md5 /tmp/tmp.UZgu70ZX1t/temp_file
 + DOWNLOADED_MD5=7e8191b24853d75de2af87622ad293ba
 + '[' 7e8191b24853d75de2af87622ad293ba '!=' 7e8191b24853d75de2af87622ad293ba ']'
 ++ sed 's/\?.*//'
@@ -130,13 +130,13 @@ downloading https://github.com/google/gemmlowp/archive/719139ce755a0f31cbf1c37f7
 + [[ https://github.com/google/gemmlowp/archive/719139ce755a0f31cbf1c37f7f98adcc7fc9f425.zip == *tar.xz ]]
 + [[ https://github.com/google/gemmlowp/archive/719139ce755a0f31cbf1c37f7f98adcc7fc9f425.zip == *bz2 ]]
 + [[ https://github.com/google/gemmlowp/archive/719139ce755a0f31cbf1c37f7f98adcc7fc9f425.zip == *zip ]]
-+ unzip /tmp/tmp.UZgu70ZX1t/temp_file -d /tmp/tmp.ssIThmahU5
++ unzip /tmp/tmp.ohhWce5wKz/temp_file -d /tmp/tmp.BZggHQd4bh
 ++ wc -l
-++ find /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425 -maxdepth 0
+++ find /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425 -maxdepth 0
 + '[' 1 = 1 ']'
-+ '[' -d /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425 ']'
-+ cp -R /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/AUTHORS /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/BUILD /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/CONTRIBUTING /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/CONTRIBUTORS /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/LICENSE /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/Makefile.travis /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/README.md /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/WORKSPACE /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/contrib /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/doc /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/eight_bit_int_gemm /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/fixedpoint /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/flags.bzl /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/internal /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/jni /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/meta /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/profiling /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/public /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/scripts /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/standalone /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/test /tmp/tmp.ssIThmahU5/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/todo tensorflow/lite/micro/tools/make/downloads/gemmlowp/
-+ rm -rf /tmp/tmp.ssIThmahU5 /tmp/tmp.UZgu70ZX1t
++ '[' -d /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425 ']'
++ cp -R /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/AUTHORS /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/BUILD /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/CONTRIBUTING /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/CONTRIBUTORS /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/LICENSE /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/Makefile.travis /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/README.md /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/WORKSPACE /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/contrib /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/doc /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/eight_bit_int_gemm /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/fixedpoint /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/flags.bzl /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/internal /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/jni /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/meta /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/profiling /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/public /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/scripts /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/standalone /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/test /tmp/tmp.BZggHQd4bh/gemmlowp-719139ce755a0f31cbf1c37f7f98adcc7fc9f425/todo tensorflow/lite/micro/tools/make/downloads/gemmlowp/
++ rm -rf /tmp/tmp.BZggHQd4bh /tmp/tmp.ohhWce5wKz
 + find tensorflow/lite/micro/tools/make/downloads/gemmlowp -type f -name '*BUILD' -delete
 + [[ '' == \p\a\t\c\h\_\a\m\_\s\d\k ]]
 + [[ '' == \p\a\t\c\h\_\c\i\f\a\r\1\0\_\d\a\t\a\s\e\t ]]
@@ -147,8 +147,8 @@ tensorflow/lite/micro/tools/make/download_and_extract.sh "https://github.com/goo
 downloading https://github.com/google/ruy/archive/d37128311b445e758136b8602d1bbd2a755e115d.zip
 + [[ 0 -eq 0 ]]
 + break
-++ openssl dgst -md5 /tmp/tmp.CFo2dCQIca/temp_file
 ++ sed 's/.* //g'
+++ openssl dgst -md5 /tmp/tmp.9ZW1mNYB14/temp_file
 + DOWNLOADED_MD5=abf7a91eb90d195f016ebe0be885bb6e
 + '[' abf7a91eb90d195f016ebe0be885bb6e '!=' abf7a91eb90d195f016ebe0be885bb6e ']'
 ++ echo https://github.com/google/ruy/archive/d37128311b445e758136b8602d1bbd2a755e115d.zip
@@ -158,13 +158,13 @@ downloading https://github.com/google/ruy/archive/d37128311b445e758136b8602d1bbd
 + [[ https://github.com/google/ruy/archive/d37128311b445e758136b8602d1bbd2a755e115d.zip == *tar.xz ]]
 + [[ https://github.com/google/ruy/archive/d37128311b445e758136b8602d1bbd2a755e115d.zip == *bz2 ]]
 + [[ https://github.com/google/ruy/archive/d37128311b445e758136b8602d1bbd2a755e115d.zip == *zip ]]
-+ unzip /tmp/tmp.CFo2dCQIca/temp_file -d /tmp/tmp.Z73bGAl0OQ
-++ find /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d -maxdepth 0
++ unzip /tmp/tmp.9ZW1mNYB14/temp_file -d /tmp/tmp.MMmIu2NEYp
+++ find /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d -maxdepth 0
 ++ wc -l
 + '[' 1 = 1 ']'
-+ '[' -d /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d ']'
-+ cp -R /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d/BUILD /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d/CMakeLists.txt /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d/CONTRIBUTING.md /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d/LICENSE /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d/README.md /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d/WORKSPACE /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d/cmake /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d/doc /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d/example /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d/ruy /tmp/tmp.Z73bGAl0OQ/ruy-d37128311b445e758136b8602d1bbd2a755e115d/third_party tensorflow/lite/micro/tools/make/downloads/ruy/
-+ rm -rf /tmp/tmp.Z73bGAl0OQ /tmp/tmp.CFo2dCQIca
++ '[' -d /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d ']'
++ cp -R /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d/BUILD /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d/CMakeLists.txt /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d/CONTRIBUTING.md /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d/LICENSE /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d/README.md /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d/WORKSPACE /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d/cmake /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d/doc /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d/example /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d/ruy /tmp/tmp.MMmIu2NEYp/ruy-d37128311b445e758136b8602d1bbd2a755e115d/third_party tensorflow/lite/micro/tools/make/downloads/ruy/
++ rm -rf /tmp/tmp.MMmIu2NEYp /tmp/tmp.9ZW1mNYB14
 + find tensorflow/lite/micro/tools/make/downloads/ruy -type f -name '*BUILD' -delete
 + [[ '' == \p\a\t\c\h\_\a\m\_\s\d\k ]]
 + [[ '' == \p\a\t\c\h\_\c\i\f\a\r\1\0\_\d\a\t\a\s\e\t ]]
@@ -178,31 +178,31 @@ tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping 
 tensorflow/lite/micro/tools/make/downloads/kissfft already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
 URL transformed to HTTPS due to an HSTS policy
---2022-07-12 15:56:47--  https://github.com/foss-xtensa/nnlib-hifi4/raw/master/archive/xa_nnlib_hifi4_11_09_2021.zip
-Resolving github.com (github.com)... 140.82.113.3
-Connecting to github.com (github.com)|140.82.113.3|:443... connected.
+--2022-07-13 06:00:35--  https://github.com/foss-xtensa/nnlib-hifi4/raw/master/archive/xa_nnlib_hifi4_11_09_2021.zip
+Resolving github.com (github.com)... 140.82.113.4
+Connecting to github.com (github.com)|140.82.113.4|:443... connected.
 HTTP request sent, awaiting response... 302 Found
 Location: https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi4/master/archive/xa_nnlib_hifi4_11_09_2021.zip [following]
---2022-07-12 15:56:48--  https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi4/master/archive/xa_nnlib_hifi4_11_09_2021.zip
-Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8000::154, 2606:50c0:8001::154, 2606:50c0:8002::154, ...
+--2022-07-13 06:00:36--  https://raw.githubusercontent.com/foss-xtensa/nnlib-hifi4/master/archive/xa_nnlib_hifi4_11_09_2021.zip
+Resolving raw.githubusercontent.com (raw.githubusercontent.com)... 2606:50c0:8000::154, 2606:50c0:8001::154, 2606:50c0:8003::154, ...
 Connecting to raw.githubusercontent.com (raw.githubusercontent.com)|2606:50c0:8000::154|:443... connected.
 HTTP request sent, awaiting response... 200 OK
 Length: 534489 (522K) [application/zip]
-Saving to: '/tmp/tmp.KoEV9L9bam/xa_nnlib_hifi4.zip'
+Saving to: '/tmp/tmp.ZEwHsHLYxj/xa_nnlib_hifi4.zip'
 
-     0K .......... .......... .......... .......... ..........  9% 20.5M 0s
-    50K .......... .......... .......... .......... .......... 19% 22.7M 0s
-   100K .......... .......... .......... .......... .......... 28%  106M 0s
-   150K .......... .......... .......... .......... .......... 38% 58.4M 0s
-   200K .......... .......... .......... .......... .......... 47% 40.7M 0s
+     0K .......... .......... .......... .......... ..........  9% 21.5M 0s
+    50K .......... .......... .......... .......... .......... 19% 22.5M 0s
+   100K .......... .......... .......... .......... .......... 28% 78.9M 0s
+   150K .......... .......... .......... .......... .......... 38%  105M 0s
+   200K .......... .......... .......... .......... .......... 47% 34.9M 0s
    250K .......... .......... .......... .......... .......... 57%  119M 0s
-   300K .......... .......... .......... .......... .......... 67%  117M 0s
-   350K .......... .......... .......... .......... .......... 76% 95.7M 0s
-   400K .......... .......... .......... .......... .......... 86%  118M 0s
-   450K .......... .......... .......... .......... .......... 95%  105M 0s
-   500K .......... .......... .                               100%  161M=0.009s
+   300K .......... .......... .......... .......... .......... 67% 70.0M 0s
+   350K .......... .......... .......... .......... .......... 76%  104M 0s
+   400K .......... .......... .......... .......... .......... 86% 96.8M 0s
+   450K .......... .......... .......... .......... .......... 95%  137M 0s
+   500K .......... .......... .                               100%  128M=0.01s
 
-2022-07-12 15:56:48 (54.3 MB/s) - '/tmp/tmp.KoEV9L9bam/xa_nnlib_hifi4.zip' saved [534489/534489]
+2022-07-13 06:00:36 (53.5 MB/s) - '/tmp/tmp.ZEwHsHLYxj/xa_nnlib_hifi4.zip' saved [534489/534489]
 
 Switched to a new branch 'tflm'
 Applying /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/.//../../ext_libs/xa_nnlib_hifi4.patch to /usr/local/google/home/advaitjain/github/local-continuous-build/tflite-micro/tensorflow/lite/micro/tools/make/downloads/xa_nnlib_hifi4/./
