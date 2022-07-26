@@ -1,4 +1,4 @@
-Building at 05b1c5e582c988fce8eca6d7ba9b5f28a932c343
+Building at 7b12c2ecd3faa644b16028752f679c56a771eeef
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -1051,7 +1051,27 @@ Testing FloatMaxOpTestKeepDims
 Testing Int8MaxOpTestKeepDims
 Testing Int8MaxOpTestWithoutKeepDims
 Testing MeanInt84DWithoutKeepDimsWithPrecision
-19/19 tests passed
+Testing SumFloatFlatten2ReduceDims
+Testing SumFloatFlatten2NonReduceDims
+Testing SumFloatFlatten2MiddleDims
+Testing SumFloat2DKeepDims
+Testing SumInt82DKeepDims
+Testing SumInt162DKeepDims
+Testing SumFloat3DKeepDims
+Testing SumInt83DKeepDims
+Testing SumInt163DKeepDims
+Testing SumFloat4DKeepDims
+Testing SumInt84DKeepDims
+Testing SumInt84DKeepDimsOverflows
+Testing SumInt164DKeepDims
+Testing SumFloat4DWithoutKeepDims
+Testing SumInt84DWithoutKeepDims
+Testing SumInt164DWithoutKeepDims
+Testing SumInt164DWithoutKeepDimsDifferentScaleAndZeroPoint
+Testing SumFloatSize1
+Testing SumFloat2DRedundantDims
+Testing SumFloatScalar
+39/39 tests passed
 ~~~ALL TESTS PASSED~~~
 
 xt-clang++ -std=c++11 -fno-exceptions -fno-threadsafe-statics -Werror -fno-unwind-tables -ffunction-sections -fdata-sections -fmessage-length=0 -DTF_LITE_STATIC_MEMORY -DTF_LITE_DISABLE_X86_NEON -Wsign-compare -Wdouble-promotion -Wshadow -Wunused-variable -Wunused-function -Wswitch -Wvla -Wall -Wextra -Wmissing-field-initializers -Wstrict-aliasing -Wno-unused-parameter -DXTENSA -DTF_LITE_MCU_DEBUG_LOG -DTF_LITE_USE_CTIME --xtensa-core=P6_200528 -mcoproc -DMAX_RFFT_PWR=9 -DMIN_RFFT_PWR=MAX_RFFT_PWR -DVISION_P6 -mlongcalls -DXI_ERROR_LEVEL=XI_ERROR_LEVEL_NO_ERROR -DCNNRT_PERF_LEVEL=CNNRT_PERF_LEVEL_NONE -DINCLUDE_XI_CNN -Wno-shadow -Os -I. -Itensorflow/lite/micro/tools/make/downloads/gemmlowp -Itensorflow/lite/micro/tools/make/downloads/flatbuffers/include -Itensorflow/lite/micro/tools/make/downloads/ruy -Itensorflow/lite/micro/tools/make/downloads/xi_tflmlib_vision_p6/flk/include -Itensorflow/lite/micro/tools/make/downloads/xi_tflmlib_vision_p6/kernels/include/ -Itensorflow/lite/micro/tools/make/downloads/xi_tflmlib_vision_p6/runtime/include/  -Itensorflow/lite/micro/tools/make/downloads/hifi_fft/ -Itensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/genfiles/ -Itensorflow/lite/micro/tools/make/downloads/kissfft -c tensorflow/lite/micro/kernels/reshape_test.cc -o tensorflow/lite/micro/tools/make/gen/xtensa_vision_p6_default/obj/core/tensorflow/lite/micro/kernels/reshape_test.o
