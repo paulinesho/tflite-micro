@@ -1,4 +1,4 @@
-Building at 313630deba99e2a903e2e59f13458bf72e21d13e
+Building at f474248365ad48654ba8a27ac5bf49a6afbb80e7
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -805,9 +805,9 @@ Testing ExpandDimsNegativeAxisTest3
 Testing ExpandDimsNegativeAxisTest2
 Testing ExpandDimsNegativeAxisTest1
 Testing ExpandDimsInputOutputDimsMismatchShallFail
-tensorflow/lite/micro/kernels/expand_dims.cc:76 output_shape.Dims(i) == input_shape.Dims(i) was not true.
+tensorflow/lite/micro/kernels/expand_dims.cc:74 output_shape.Dims(i) == input_shape.Dims(i) was not true.
 Testing ExpandDimsAxisOutOfRangeShallFail
-tensorflow/lite/micro/kernels/expand_dims.cc:65 axis_value <= input_shape.DimensionsCount() was not true.
+tensorflow/lite/micro/kernels/expand_dims.cc:63 axis_value <= input_shape.DimensionsCount() was not true.
 9/9 tests passed
 ~~~ALL TESTS PASSED~~~
 
