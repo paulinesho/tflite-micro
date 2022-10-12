@@ -1,8 +1,7 @@
-Building at 3648cf9003d0e2d5658b1add916000ce09a4b427
+Building at 327c07d46ba6f95ddcbd54cc8fe35c6f71702c74
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
-find: '../google': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/kissfft already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
@@ -10,7 +9,6 @@ rm -rf gen
 
 make -f tensorflow/lite/micro/tools/make/Makefile TARGET=xtensa OPTIMIZED_KERNEL_DIR=xtensa TARGET_ARCH=hifi4 XTENSA_CORE=F1_190305_swupgrade test
 
-find: '../google': No such file or directory
 tensorflow/lite/micro/tools/make/downloads/flatbuffers already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/kissfft already exists, skipping the download.
 tensorflow/lite/micro/tools/make/downloads/pigweed already exists, skipping the download.
