@@ -1,4 +1,4 @@
-Building at 81f5208ef75e2375f9bc96b0077401d0de4e84e6
+Building at df704e13533ec9bd8622986e77e0eb7ff052e5cc
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -515,8 +515,8 @@ tensorflow/lite/micro/testing/test_xtensa_binary.sh gen/xtensa_hifi4_default/bin
 Testing Int8Filter1x3x3x1ShouldMatchGoldenEvenInputPaddingSame
 Testing Int8Filter1x3x3x1ShouldMatchGoldenOddInputPaddingSame
 Testing FilterDimsNotMatchingAffineQuantization
-tensorflow/lite/micro/kernels/conv_common.cc:184 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
-tensorflow/lite/micro/kernels/conv_common.cc:184 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
+tensorflow/lite/micro/kernels/conv_common.cc:180 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
+tensorflow/lite/micro/kernels/conv_common.cc:180 affine_quantization->scale->size == 1 || affine_quantization->scale->size == filter->dims->data[kConvQu was not true.
 Testing Int8Input32x1Filter32x32ShouldMatchGolden
 Testing Int8Filter8x3x3x3PerChannelScaleRelu6ShouldMatchGolden
 5/5 tests passed
