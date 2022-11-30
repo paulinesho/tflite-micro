@@ -1,4 +1,4 @@
-Building at b4279b999d34ed71a57f53ce47162f8a1f7f133b
+Building at c06d512a78589e324d31e3f9cf83d7811332c578
 
 make -f tensorflow/lite/micro/tools/make/Makefile clean
 
@@ -1091,11 +1091,11 @@ Testing Test2DInt8V2
 Testing Test2DInt16V2
 Testing Test2DInt32V2
 Testing Test2DInt8V2ExpectFailurePadValueQuantizationMismatch
-tensorflow/lite/micro/kernels/xtensa/pad.cc:136 static_cast<double>(output->params.scale) != static_cast<double>(constant_values->params.scale) (0 != 1072693248)
+tensorflow/lite/micro/kernels/xtensa/pad.cc:135 static_cast<double>(output->params.scale) != static_cast<double>(constant_values->params.scale) (0 != 1072693248)
 Testing Test2DInt8V2ExpectFailurePadValueQuantizationMismatch
-tensorflow/lite/micro/kernels/xtensa/pad.cc:136 static_cast<double>(output->params.scale) != static_cast<double>(constant_values->params.scale) (0 != 1072693248)
+tensorflow/lite/micro/kernels/xtensa/pad.cc:135 static_cast<double>(output->params.scale) != static_cast<double>(constant_values->params.scale) (0 != 1072693248)
 Testing Test2DInt8ExpectFailureQuantizationRangeExcludesZero
-tensorflow/lite/micro/kernels/xtensa/pad.cc:129 output->params.zero_point <= std::numeric_limits<int8_t>::max() was not true.
+tensorflow/lite/micro/kernels/xtensa/pad.cc:128 output->params.zero_point <= std::numeric_limits<int8_t>::max() was not true.
 12/12 tests passed
 ~~~ALL TESTS PASSED~~~
 
